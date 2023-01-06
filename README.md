@@ -1,10 +1,8 @@
-# 1.01 Modifications
+# 1.02 Modifications
 
-## Favicon
-## Title + Description
-## Prettier in css
-## Add transition anim in header for banner_3x
-## Footer - add title and version
+## Card Info - hover: Découvrer le projet
+## Card_dev slider - width: 85% -> 60%
+
 
 
 
