@@ -1,0 +1,176 @@
+#identity {
+  position: relative;
+}
+.myself {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 255, 255, 0.49);
+}
+
+#identity,
+#studies,
+#experience,
+#characteristics,
+#aptitude {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+#aptitude {
+  flex-direction: column;
+  align-items: center;
+}
+.aptitude_item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.h3_cv {
+  min-width: 320px;
+  width: auto;
+  height: auto;
+  font-size: 30px;
+  line-height: 20px;
+  padding-right: 40px;
+  text-align: right;
+  color: var(--primary);
+  font-family: "Dancing Script";
+}
+.h3_cv_identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: rgba(137, 43, 226, 0.456); */
+}
+.h3_cv_identity img {
+  width: 200px;
+  height: auto;
+}
+
+.container_p {
+  display: flex;
+}
+p {
+  display: block;
+  color: var(--p_cv);
+  font-size: 16px;
+  line-height: 22px;
+}
+.col1 {
+  width: 200px;
+}
+.col2 {
+  width: 300px;
+}
+
+.col3 {
+  display: block;
+
+  width: 500px;
+}
+.container_p {
+  display: flex;
+}
+.italique {
+  font-style: italic;
+  letter-spacing: -1px;
+}
+/* --------------------------------- */
+
+@media all and (max-width: 900px) {
+  .h3_cv {
+    font-size: 24px;
+    min-width: 270px;
+    padding-right: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  #identity,
+  #studies,
+  #experience,
+  #characteristics,
+  #aptitude {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+  .col1 {
+    width: 150px;
+  }
+  .col3 {
+    width: 450px;
+  }
+}
+@media all and (max-width: 767px) {
+  #identity,
+  #studies,
+  #experience,
+  #characteristics,
+  #aptitude {
+    flex-wrap: wrap;
+  }
+  #identity {
+    padding-top: 0;
+  }
+  .h3_cv {
+    min-width: none;
+    width: 430px;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .col1 {
+    width: 130px;
+  }
+  /* col2 = 300px */
+  .col3 {
+    width: 430px;
+  }
+  .h3_cv_identity {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .h3_cv_identity img {
+    margin-bottom: 20px;
+    width: 150px;
+  }
+  .aptitude_item {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 479px) {
+  .col1 {
+    width: 115px;
+    padding-left: 5px;
+  }
+  .col2 {
+    width: 165px;
+  }
+  .col3 {
+    width: 270px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+  }
+  .h3_cv {
+    width: 280px;
+    padding-right: 0;
+    padding-left: 5px;
+  }
+  #identity,
+  #studies,
+  #experience,
+  #characteristics,
+  #aptitude {
+    padding-right: 0;
+  }
+  p {
+    letter-spacing: -0.5px;
+  }
+}

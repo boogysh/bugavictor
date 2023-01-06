@@ -1,0 +1,158 @@
+[
+    {
+        "id":"pr3-stade",
+        "title":"Centre d'entrainement, destiné aux forces de l'ordre",
+        "description":"C'est un projet destinné aux forces de l'ordre, équipé d'un terrain de foot pour 2300 spectateurs,un terrain de volley, un terrain de basket, une piscine de 25m, un cort de tennis, plusiers salles de box et combat, une salle de fitness etc.",
+        "cover": "https://i.ibb.co/NFWRWVk/pr3-1.jpg",
+        "pictures":[
+            "https://i.ibb.co/2PQsmK0/27062008241.jpg",
+            "https://i.ibb.co/q9V2vzt/27062008243.jpg",
+            "https://i.ibb.co/NFWRWVk/pr3-1.jpg",
+            "https://i.ibb.co/k1QLmBN/pr3-2.jpg",
+            "https://i.ibb.co/rdhc0NZ/pr3-3.jpg",
+            "https://i.ibb.co/WkVV32Q/pr3-4.jpg",
+            "https://i.ibb.co/Vgz6TLx/state1-1.png",
+            "https://i.ibb.co/5FRFPf6/stade-2.png",
+            "https://i.ibb.co/YysGg49/stade3.png",
+            "https://i.ibb.co/LQ0xRxb/stade4.png"
+        ],
+        "info":[
+            "Stade: 2600 spectateurs",
+            "Éspace: Basket, Voley, Tennis, Box, Tir, Paintball, Fitness",
+            "Piscine: 25m, 6 couloirs",
+            "Repos: Sauna, Thérapie, Réstaurant",
+            "Parking: 360 voitures"
+        ]
+    },
+    {   
+        "id":"pr1-maison",
+        "title":"Maison individuelle P+S (Rez de chaussée + mansarde)",
+        "description":"Maison pour une famille avec 3-4 enfants. Les photos sont des rendus (renders) realisées avec 3D'S MAX + V-ray",
+        "cover": "https://i.ibb.co/rFqskS8/pr1-1.jpg",
+        "pictures":[
+            "https://i.ibb.co/rFqskS8/pr1-1.jpg",
+            "https://i.ibb.co/pd8B5JJ/pr1-2.jpg",
+            "https://i.ibb.co/yfF1rrN/pr1-3.jpg",
+            "https://i.ibb.co/j3fJmZk/RDC.png",
+            "https://i.ibb.co/RPvrtSH/etage.png",
+            "https://i.ibb.co/pdsPTyz/fond.png",
+            "https://i.ibb.co/TL8F84D/charpante.png",
+            "https://i.ibb.co/0Xt4KGN/section.png"
+        ],
+        "info":[
+            "Maison en blocs de calcaires",
+            "Pour une famille de 5 - 6 personnes.",
+            "Sous-sols: salle de sport et un dépôt.",
+            "RDC: cuisine, sale à manger, séjour, bureau, bloc sanitaire.",
+            "Étage: 4 chambres et bloc sanitaire. "
+        ]
+    },
+    {   "id":"pr2-maison",
+        "title":"Merveilleuse maison, sortie d'une conte de Fées",
+        "description":"Cette maison avec des caractéristiques hors du commun reste assez connue. Le plus difficile est de systématiser l'espace pour la transformer dans un logement habitable",
+        "cover":"https://i.ibb.co/xsZkpfr/pr2-1.jpg",
+        "pictures":[
+            "https://i.ibb.co/xsZkpfr/pr2-1.jpg",
+            "https://i.ibb.co/KzY84QD/pr2-2.jpg",
+            "https://i.ibb.co/0Y8jXv7/pr2-3.jpg",
+            "https://i.ibb.co/0K7hzxG/pr2-4.jpg",
+            "https://i.ibb.co/x3krBLx/zol-1.png",
+            "https://i.ibb.co/0jYQHW7/zol-2.png"
+        ],
+        "info":[
+            "Maison en blocs de calcaires.",
+            "Pour une famille de 4 - 5 personnes.",
+            "Projet connu,completement adaptaté au besoins du quotidien.",
+            "RDC: Cuisine, salle à manger, séjour, WC",
+            "Étage: 3 chambres, SDB"
+        ]
+    },
+    
+    {
+      "id":"pr4-cinema",
+      "title":"Boogysh Cinéma",
+      "description":"Le projet Boogysh Cinéma, répresente la solution aux problèmes comme: la physique du son, calcule de visibilité en respectant les règles de l'art",
+      "cover":"https://i.ibb.co/6RCLVc6/cine-facade.png",
+      "pictures":[
+        "https://i.ibb.co/6RCLVc6/cine-facade.png",
+        "https://i.ibb.co/d6K27Mv/cine1.png",
+        "https://i.ibb.co/Qpzv7zc/cine2.png",
+        "https://i.ibb.co/wYtCHjv/cine-section.png"
+        ],
+    "info":[
+        "Salle de cinema, Longuer 24m, 5 secteurs.",
+        "Capacité 528 places",
+        "Calcule de visibilité, assuré",
+        "Restaurants",
+        "Salles destinnées à l'administration"
+        ]
+    },
+    {
+        "id":"pr5-reconstruction",
+        "title":"La rconstruction d'un immeuble de 4 niveaux",
+        "description":"La consolidation des fondations afin de rajouter un niveau plus la  mansarde",
+        "cover":"https://i.ibb.co/xCRfSKp/recon-facade.png",
+        "pictures":[
+            "https://i.ibb.co/xCRfSKp/recon-facade.png",
+            "https://i.ibb.co/QbPcsvK/facade-recon-exist.png",
+            "https://i.ibb.co/PtySGHc/recon-rdc.png",
+            "https://i.ibb.co/8BsbPmX/recon-fond-exist.png",
+            "https://i.ibb.co/fFxFGS9/recon-fond-pr.png",
+            "https://i.ibb.co/p2T9DFZ/recon-section.png"
+        ],
+        "info":[
+            "Existent: Bâtiment en 4 niveaux, rez-de-chaussée + 3 étages",
+            "Rajout d'un étage supplémentaire et d'une mansarde",
+            "Calcule pour chaque type de fondation",
+            "Consolidation des fondations par tranche de 3m"
+
+        ]
+    },
+    {
+        "id":"pr6-urbanime",
+        "title":"Plan d'urbanisme",
+        "description":"Plan d'urbanisme en détails d'un cartier pour 5000 habitants",
+        "cover":"https://i.ibb.co/LJNZcm5/pr5.jpg",
+        "pictures":[
+            "https://i.ibb.co/LJNZcm5/pr5.jpg"
+        ],
+        "info":[
+            "Quartier pour 5000 habitants",
+            "Une école maternelle",
+            "Éspaces aménagé: Pour les enfants 3-7 ans",
+            "Éspaces aménagé: Pour les enfants 7-12 ans",
+            "Éspaces verts"
+
+
+        ]
+    },
+    {
+        "id":"pr7-sistematisation-verticale",
+        "title":"Systématisation verticale",
+        "description":"Systématisation verticale d'un quartier avec l'artère routière adjacente",
+        "cover":"https://i.ibb.co/L6LsZk2/pr6.jpg",
+        "pictures":[
+            "https://i.ibb.co/L6LsZk2/pr6.jpg"
+        ],
+        "info":[
+            "Identifier sur le plan  les courbes de niveau.",
+            "D’après les courbes des niveaux, d’aménager un territoire avec des bâtiments et projeter une intersection dénivelée type trèfle allongé.",
+            "Déterminer la cote '0' de chaque bâtiment.",
+            "Montrer la section transversale de la  chossée. "
+            
+        ]
+    }
+]
+    
+            
+
+
+
+    
+        
+            
+            
+        
+
+        
+        

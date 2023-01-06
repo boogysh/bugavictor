@@ -1,0 +1,26 @@
+.header_contact_list{
+    display: flex;
+}
+.header_contact_item {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    transition: all 0.2s ease-in-out;
+  }
+.logo_header{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+.logo_header:hover{
+    transform: scale(1.1);
+}
+@media all and (max-width:370px){
+    .header_contact_item{
+        padding-left: 8px;
+    }
+    .logo_header{
+        transform: scale(0.8);
+    }
+}

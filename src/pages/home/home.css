@@ -1,0 +1,44 @@
+.main-home{
+    min-height: 660px;
+    background: var(--bg_body);
+    position: relative;
+}
+.h1-home_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1-home{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    color:var(--primary)
+}
+.main-home button{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding:5px;
+    cursor: pointer;
+}
+.main-home button:hover{
+    background-color: rgb(255, 223, 223);
+}
+/* -------------------------------------------- */
+@media all and (max-width:900px){
+    .h1-home{
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+@media all and (max-width:767px){
+    .h1-home_container{
+        flex-direction: column;
+    }
+}
+        
+
+
+    
+
+

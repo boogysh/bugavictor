@@ -1,0 +1,92 @@
+.banner
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* width: 90%; */
+    /* max-width: 1200px; */
+    width: 100%;
+    max-width: 1200px;
+    height: 170px;
+    margin-bottom:30px ;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgb(93, 92, 92);
+
+}
+.bannerImg
+{
+    object-fit: cover;
+    width: 100%;
+    height:170px;
+    border-radius: 10px;
+}
+
+.banner_title, .banner_title_dev
+{
+    position: absolute;
+    font-family: "Dancing script";
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--header);
+    margin: 20px 40px 0 0;
+    padding: 0 5px;
+    border-radius: 10px;
+   
+}
+.banner_title{
+    color: var(--primary);
+}
+
+@media all and (max-width:767px){
+    
+   
+    .bannerImg{
+        
+        border-radius: 10px;
+    }
+    .bannerImg_about{
+        height: 223px;
+        border-radius: 10px;
+    }
+    .h1_home{
+        font-size: 24px;
+        padding-right: 102px;
+        padding-left: 16px;
+        text-align: left;
+        line-height: 24px;
+    }   
+}
+@media all and (max-width:540px){
+    .banner{
+        height: 120px;
+    }
+    .bannerImg{
+        height: 120px;
+        border-radius: 0;
+    }
+    .banner_title, .banner_title_dev{
+        font-size: 36px;
+        margin: 10px 20px 0 0 ;
+    }
+}
+@media all and (max-width:370px){
+    .banner{
+        height: 100px;
+    }
+    .bannerImg{
+        height: 100px;
+    }
+    .banner_title, .banner_title_dev{
+        font-size: 30px;
+        margin: 10px 20px 0 0 ;
+    }
+    .h1_home{
+        font-size: 14px;
+        padding-right: 50px;
+    }
+    
+    
+
+}
+        
