@@ -5,7 +5,7 @@ import banner_dev from "../../assets/pr-dev/banner1_dev.png";
 import Loader from "../../components/loader/Loader";
 import { UseFetch } from "../../hooks/useFetch";
 import Error500 from "../../components/errors/Error500";
-import CardProjectDev from "../../components/cardProjectDev/CardProjectDev";
+import CardProjectDev from "../../components/cardProject/CardProjectDev";
 export default function Developpement() {
   const { data, isLoading, error } = UseFetch(`https://boogysh.github.io/cv-api/data_dev.json`); //UseFetch(`/pr_dev/data.json`)
   console.log(data);

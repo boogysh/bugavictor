@@ -12,8 +12,8 @@ export default function OneProject() {
   useEffect(() => {
     const href_arch = window.location.href.includes("/architecture");
     const href_bat = window.location.href.includes("/batiment");
-    href_arch && setHref(`/pr_arch/data.json`);
-    href_bat && setHref(`/pr_bat/data.json`);
+    href_arch && setHref(`https://boogysh.github.io/cv-api/data_arch.json`);
+    href_bat && setHref(`https://boogysh.github.io/cv-api/data_bat.json`); 
   }, []);
 
   const { data, isLoading, error } = UseFetch(href);

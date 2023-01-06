@@ -1,0 +1,15 @@
+.urlExistent {
+  padding-top: 10px;
+  text-decoration: none;
+}
+.dev_card_img_container {
+  width: 60%;
+  height: auto;
+  background: #fff;
+  border-radius: 10px;
+}
+@media all and (max-width: 992px) {
+  .dev_card_img_container {
+    width: 80%;
+  }
+}

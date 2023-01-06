@@ -21,6 +21,9 @@ function CardProject({ images, title, info, id }) {
       </div>
       <Link to={`/${uri}/${id}`} key={id} className="card__link">
         <div className="card_content_container">
+        <div className="card_bg_hover">
+            <h2>Découvrir le projet...</h2>
+          </div>
           <h2 className="card_title">{title}</h2>
           <ul>
             {info.map((item) => (

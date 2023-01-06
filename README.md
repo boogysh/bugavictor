@@ -1,7 +1,8 @@
-# 1.02 Modifications
+# 1.02 - Modifications
 
-## Card Info - hover: Découvrer le projet
-## Card_dev slider - width: 85% -> 60%
+### Card Info - hover: Découvrer le projet
+### Card_dev slider - width: 85% -> 60%
+### One project - useFetch url modif
 
 
 

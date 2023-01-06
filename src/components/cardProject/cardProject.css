@@ -11,7 +11,7 @@
   box-shadow: 0px 0px 15px rgb(93, 92, 92);
 }
 
-.card_img_container {
+.card_img_container{
   width: 85%;
   height: auto;
   background: #fff;
@@ -24,6 +24,7 @@
   border-radius: 10px 0 0 10px;
 }
 .card_content_container {
+  position: relative;
   width: auto;
   height: 100%;
   display: flex;
@@ -36,6 +37,30 @@
 }
 .card_content_container:hover {
   background: var(--bg_body_hover);
+}
+.card_bg_hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.01) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.3) 70%,
+    rgba(0, 0, 0, 0.5) 80%,
+    rgba(0, 0, 0, 0.7) 90%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  border-radius: 0 10px 10px 0;
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card_bg_hover h2 {
+  color: var(--dev_card_h2_hover);
+  padding-bottom: 20px;
+  font-size: 30px;
 }
 .card__link {
   text-decoration: none;
@@ -68,13 +93,22 @@ li {
   padding-right: 10px;
   line-height: 18px;
 }
+.card_content_container:hover .card_bg_hover {
+  display: flex;
+}
+
+
 
 @media all and (max-width: 992px) {
   .card {
     height: 300px;
+    width: 95%;
   }
   .card_img_container {
     width: 70%;
+  }
+  .card_bg_hover h2 {
+    font-size: 26px;
   }
   .card_title {
     font-size: 24px;
@@ -102,6 +136,9 @@ li {
   }
   .card_img {
     border-radius: 0;
+  }
+  .card_bg_hover h2 {
+    font-size: 20px;
   }
   .card_content_container {
     border-radius: 0 0 0 0;
