@@ -1,4 +1,4 @@
-# 1.01 Modififications
+# 1.01 Modifications
 
 ## Favicon
 ## Title + Description
