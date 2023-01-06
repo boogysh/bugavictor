@@ -1,12 +1,11 @@
-.main_building{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--bg_body);
+.main_building {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg_body);
 }
-.cards_bat{
-    margin-top: 30px;
-    
+.cards_bat {
+  margin-top: 30px;
 }

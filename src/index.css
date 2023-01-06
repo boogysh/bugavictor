@@ -1,70 +1,66 @@
-*,::before, ::after{
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family: Arial, Helvetica, 'Montserrat', sans-serif;
-    
+  font-family: Arial, Helvetica, "Montserrat", sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-body{
-  --p_cv:black;
-  --header:#F3F3F3;
-  --cards_bg:#F7F7F7;
+body {
+  --p_cv: black;
+  --header: #f3f3f3;
+  --cards_bg: #f7f7f7;
 
-  --primary:#FF6060;
-  --primary:#a90000;
-  --primary:#180101;
-  
+  --primary: #ff6060;
+  --primary: #a90000;
+  --primary: #180101;
+
   --bg_color: #f7f7f7;
-  --bg_body:rgb(253, 239, 239);
-  --bg_body_hover:rgb(224, 209, 209);
-  --bg_body_dark:rgb(223, 204, 204);
-  --bg_body_dark:rgb(235, 222, 222);
-  --banner_h1: #FF6060;
-  --banner_h1_font:"Dancing Script";
-  --h3_header:"Dancing Script";
-  --footer:"Dancing Script";
-  --card_link:#FFFFFF;
-  --DD_bg_color:#f7f7f7;
-  --h1:"Dancing Script";
-  --h3_DD: #FFF;
+  --bg_body: rgb(253, 239, 239);
+  --bg_body_hover: rgb(224, 209, 209);
+  --bg_body_dark: rgb(223, 204, 204);
+  --bg_body_dark: rgb(235, 222, 222);
+  --banner_h1: #ff6060;
+  --banner_h1_font: "Dancing Script";
+  --h3_header: "Dancing Script";
+  --footer: "Dancing Script";
+  --card_link: #ffffff;
+  --DD_bg_color: #f7f7f7;
+  --h1: "Dancing Script";
+  --h3_DD: #fff;
   /* --h3_DD_about:#FFF; */
-  --h3_footer_color:#FFF;
+  --h3_footer_color: #fff;
 
-  --slider_nr_color:#00D26A;
-  --slider_nr_color:#F3976C;
-  --slider_nr_color:#FFF;
+  --slider_nr_color: #00d26a;
+  --slider_nr_color: #f3976c;
+  --slider_nr_color: #fff;
 
-
-  --tags_color:#FFF;
+  --tags_color: #fff;
   --DD_title_bg: rgb(106, 168, 250);
-  --box_shadow_dd: rgb(141,141,141);
-  --box_shadow_slider:rgb(83, 83, 83);
+  --box_shadow_dd: rgb(141, 141, 141);
+  --box_shadow_slider: rgb(83, 83, 83);
   --p_content: black;
 }
 /* h1{
   font-family: "Dancing Script" ;
 } */
-h2{
-  font-family: "Dancing Script" ;
+h2 {
+  font-family: "Dancing Script";
   font-size: 40px;
   color: var(--primary);
-  
 }
-a{
-  text-decoration: none  ;
+a {
+  text-decoration: none;
 }
-
-
-
-  

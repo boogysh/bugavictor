@@ -1,16 +1,15 @@
-.dropDown_content{
-    display: flex;
-    width: 100%;
-    height: auto;
-    align-items: space-between;
-    flex-direction: column;
+.dropDown_content {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: space-between;
+  flex-direction: column;
 }
-.rotate{
-    rotate: 180deg;
+.rotate {
+  rotate: 180deg;
 }
 
-button{
-    background-color: transparent;
-    border: none;
-    
+button {
+  background-color: transparent;
+  border: none;
 }

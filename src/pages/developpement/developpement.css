@@ -1,7 +1,7 @@
-.main_dev{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(../../assets//bg12.png);
-    background-size: cover;
+.main_dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../assets//bg12.png);
+  background-size: cover;
 }
