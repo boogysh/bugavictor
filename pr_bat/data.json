@@ -1,0 +1,156 @@
+[
+    {   
+        "id":"pr1-terasse",
+        "title":"Réalisation d'une terasse en travertin et renovation de la piscine",
+        "description":"Réalisation d'une chappe",
+        "cover": "https://i.ibb.co/74wC5fL/DSC-2193.jpg",
+        "pictures":[
+            "https://i.ibb.co/F7DQ7Kx/20130725-103212.jpg",
+            "https://i.ibb.co/74wC5fL/DSC-2193.jpg",
+            "https://i.ibb.co/RHMg3K9/IMG-2388.jpg",
+            "https://i.ibb.co/jDBWcws/20130503-183134.jpg",
+            "https://i.ibb.co/dL2mSxF/IMG-3461.jpg",
+            "https://i.ibb.co/ZSvFWNy/IMG-3071.jpg"
+        ],
+        "info":[
+            "Réalisation d'une chappe de 6 à 12 cm.",
+            "La pose du travertin ep. 2cm avec un  motif de 4 pieces. ",
+            "La pose des margelles de la piscine ep. 5cm.",
+            "Piscine - pose de la mosaïque 4.5cm x 4.5cm, colle epoxy. ",
+            "Application des deux couches de protection sur la pierre."
+        ]
+    },
+    {
+        "id":"renovation_totale",
+        "title":"Rénovation totale d'un appartement",
+        "cover":"https://i.ibb.co/LPkPj5T/20171129-214218.jpg",
+        "pictures":[
+            "https://i.ibb.co/LPkPj5T/20171129-214218.jpg",
+            "https://i.ibb.co/kqkkG4p/20170811-193200.jpg",
+            "https://i.ibb.co/qCgxTS1/20170811-193417.jpg",
+            "https://i.ibb.co/PYNCVsp/20170812-180931.jpg",
+            "https://i.ibb.co/JQZT1RP/20170818-134620.jpg",
+            "https://i.ibb.co/T1PMTN1/20170818-134628.jpg",
+            "https://i.ibb.co/CmpNsBG/20170818-134640.jpg",
+            "https://i.ibb.co/MMGMLN5/20170825-161231.jpg",
+            "https://i.ibb.co/wRLxnrC/20170825-161257.jpg",
+            "https://i.ibb.co/7jR5NDX/20170831-162900.jpg",
+            "https://i.ibb.co/XSbMPps/20170831-162907.jpg",
+            "https://i.ibb.co/nzfd708/20170831-162922.jpg",
+            "https://i.ibb.co/yhCYgnm/20170902-122846.jpg",
+           "https://i.ibb.co/LPkPj5T/20171129-214218.jpg",
+           "https://i.ibb.co/qsGMTHT/IMG-43b74188439570b5f7f0a6c3b0c67e7b-V.jpg",
+           "https://i.ibb.co/3Y3b8Wx/IMG-73adc7a6b70df4457a681d4e9cbe147d-V.jpg",
+           "https://i.ibb.co/b1mNXgD/IMG-84e56a626d153a4c32011dfd2a29e3eb-V.jpg",
+           "https://i.ibb.co/gv1scZJ/IMG-3238a29d32bfe2c874062224fef12f5e-V.jpg"
+        ],
+        "info":[
+            "Démolition et évacuation des gravats.",
+            "Réalisation l'ensamble des cloisons en placostil. ",
+            "Installation des menuiseries.",
+            "Electricité et plomberie",
+            "Enduits et peinture",
+            "Ragréage et chauffage au sol électrique",
+            "Pause du carrelage dans la cuisine et les salles de bains.",
+            "Pose collée du parquet massif dans les chambres"
+        ]
+    },
+    {
+         
+        "id":"ouvertures",
+        "title":"Réalisation des ouvertures",
+        "cover": "https://i.ibb.co/4S3XkSQ/20210415-120420.jpg",
+        "pictures":[
+            "https://i.ibb.co/pykChVQ/20210406-164923.jpg",
+            "https://i.ibb.co/4S3XkSQ/20210415-120420.jpg",
+            "https://i.ibb.co/DVjmhr6/20180227-144041.jpg",
+            "https://i.ibb.co/YTWnYFR/20200320-152605.jpg",
+            "https://i.ibb.co/SvpN521/20200320-152624.jpg",
+            "https://i.ibb.co/RckZ7SH/20180904-164233.jpg"
+        ],
+        "info":[
+            "Les calucules des charges des murs, plancher et de la charpante.",
+            "Calculer les dimensions et les profils des fers.",
+            "Réalisation des linteau en deux étapes.",
+            "Réalisation des jambages en béton armé.",
+            "Réalisation de l'ouverture et évacuation des gravats",
+            "Réalisation d'un appui/seuil en béton armé.",
+            "La pose de la menuiserie conforme DTU",
+            "Dégrossi et l'enduisage des tableaux."
+        ] 
+        
+    },
+    {
+        "id":"extension",
+        "title":"Réalisation d'une extension. Gros œuvre. ",
+        "cover":"https://i.ibb.co/pn36bXs/IMG-4270.jpg",
+        "pictures":[
+            "https://i.ibb.co/MRRwNnX/IMG-3765.jpg",
+            "https://i.ibb.co/MRRwNnX/IMG-3765.jpg",
+            "https://i.ibb.co/41mth2w/IMG-3771.jpg",
+            "https://i.ibb.co/T1LbtHK/IMG-3795.jpg",
+            "https://i.ibb.co/0Z7B5Xj/IMG-3800.jpg",
+            "https://i.ibb.co/n8rThFC/IMG-3801.jpg",
+            "https://i.ibb.co/XVtkBsk/IMG-4014.jpg",
+            "https://i.ibb.co/d2Gw4Jp/IMG-4015.jpg",
+            "https://i.ibb.co/YcPG8R4/IMG-4023.jpg",
+            "https://i.ibb.co/QHpcpbn/22042014002.jpg",
+            "https://i.ibb.co/Vt7RsP7/22042014.jpg",
+            "https://i.ibb.co/Vg5BSyC/IMG-4269.jpg",
+            "https://i.ibb.co/pn36bXs/IMG-4270.jpg",
+            "https://i.ibb.co/b7x6mtv/IMG-4273.jpg"
+        ],
+        "info":[
+            "Réalisation des fondations en béton armé profondeur 1.2m.",
+            "Plancher RDC avec des hourdis en polystyrène. ",
+            "Montage des murs en parpaings de 20cm.",
+            "Façada bâti avec de la maçonnerie traditionnelle.",
+            "Charpante avec les racords appropriés",
+            "Chainnage et poteaux en béton armé",
+            "Le toit et le chien assi couverts avec des tuiles plates"
+        ]
+
+
+    },
+    {
+        "id":"isolation-placo",
+        "title":"Isolation des murs exterieurs",
+        "cover":"https://i.ibb.co/QYYt5r1/20210128-145857.jpg",
+        "pictures":[
+            "https://i.ibb.co/QYYt5r1/20210128-145857.jpg",
+            "https://i.ibb.co/3ym2mbr/20210128-145915.jpg",
+            "https://i.ibb.co/s3H1tNM/20210128-145931.jpg",
+            "https://i.ibb.co/pKqtx8k/20210128-145840.jpg"
+        ],
+        "info":[
+            "Osature réalisée ave des rails et montants R48 et M48.",
+            "Laine de verre GR32 et eppaisseur de 120mm.",
+            "Membrane d'étanchéité",
+            "Placo BA13 normal/hydro/phonic/coupe feu."
+        ]
+
+    },
+    {
+        "id":"assainissement",
+        "title":"Assainissment et drainage",
+        "cover":"https://i.ibb.co/rdH1jVx/20180413-101536.jpg",
+        "pictures":[
+            "https://i.ibb.co/QvyGxQk/20180413-112219.jpg",
+            "https://i.ibb.co/VNpzmbt/20180413-112941.jpg",
+            "https://i.ibb.co/gRtYN8Q/20180413-112952.jpg",
+            "https://i.ibb.co/n7YT87T/20180413-113014.jpg",
+            "https://i.ibb.co/h8L490k/20180413-131333.jpg",
+            "https://i.ibb.co/7v24j9S/20180417-100622.jpg",
+            "https://i.ibb.co/gPRwhXB/1.png",
+            "https://i.ibb.co/4MYWv5v/2.png"
+
+        ],
+        "info":[
+            "Réalisation des tranchées  avec une pante 2cm au metre",
+            "Encolage des tubes en PVC diametre 100mm pour chaque future évacuation.",
+            "Raccord à l'exterieur de la maison dans un regard",
+            "Installation d'un regard 40x40 avec un tampon associé en béton. ",
+            "Systeme de drainage avec 5 longueurs et une surface de 100 m.c. "
+        ]
+    }
+]

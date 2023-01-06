@@ -1,0 +1,134 @@
+[   
+    {
+        "id":"pr7-kasa",
+        "title":"Créez une application web de location immobilière avec React",
+        "cover":"https://i.ibb.co/dJvmPMG/1.png",
+        "pictures":[
+            "https://i.ibb.co/dJvmPMG/1.png",
+            "https://i.ibb.co/jRtnLHy/2.png",
+            "https://i.ibb.co/cJ6NNBn/3.png",
+            "https://i.ibb.co/0JygDRY/4.png",
+            "https://i.ibb.co/B6WV6zP/5.png",
+            "https://i.ibb.co/9svS5xs/404.png"
+        ],
+        "info":[
+            "Découpage en composants modulaires et réutilisables",
+            "Configurer la navigation entre les pages avec React Router",
+            "Utilisation des props entre les composants",
+            "Utilisation du state dans les composants quand c'est nécessaire",
+            "Gestion des événements",
+            "La page 404 est renvoyée pour chaque route inexistante, ou il y'a une faute dans l'URL"
+        ],
+        "urlProject":"https://boogysh.github.io/kasa/"
+    },
+    {
+        "id":"pr6-api-piquante",
+        "title":"Construisez une API sécurisée pour une application d'avis gastronomiques",
+        "cover":"https://i.ibb.co/WB5BVPM/1.png",
+        "pictures":[
+            "https://i.ibb.co/WB5BVPM/1.png",
+            "https://i.ibb.co/VC2Jq4p/2.png",
+            "https://i.ibb.co/HDZrRQX/4.png",
+            "https://i.ibb.co/mc8Cgr1/5.png",
+            "https://i.ibb.co/ZxR1vB5/6.png",
+            "https://i.ibb.co/pdLFwDB/7.png"
+        ],
+        "info":[
+            "Toutes les routes dispose d'une autorisation type: Bearer <token>",
+            "Le mot de passe de l'utilisateur est haché",
+            "L'adresse électronique dans la base de données MongoDB est unique  (mongoose-unique-validator)",
+            "L'utilisateur est vérifié si il est autorisé de modifier ou supprimer une sauce.",
+            "La remontée des erreurs issues de la base de donnée, par des messages d'erreurs personnalisés"
+        ],
+        "urlProject":"https://github.com/boogysh/piquante"
+    },
+    {
+        "id":"pr5-eCommerce",
+        "title":"Construisez un site e-commerce en JavaScript",
+        "cover":"",
+        "pictures":[
+            "https://i.ibb.co/ZcZ0xK1/1.png",
+            "https://i.ibb.co/QK0D41D/kanap-2.png",
+            "https://i.ibb.co/kQMW888/kanap-3.png",
+            "https://i.ibb.co/4ZPWcMd/kanap-4.png",
+            "https://i.ibb.co/yVnYkQD/kanap-5.png",
+            "https://i.ibb.co/Y09mLQh/kanap-6.png",
+            "https://i.ibb.co/C9x27jK/kanap-7.png",
+            "https://i.ibb.co/k8SN2y2/kanap-8.png",
+            "https://i.ibb.co/kJLPmY3/kanap-9.png"
+        ],
+        "info":[
+            "Gérer des événements JavaScript",
+            "Interagir avec un web service avec JavaScript",
+            "Valider des données issues de sources externes",
+            "Créer un plan de test pour une application"
+        ],
+        "urlProject":"https://github.com/boogysh/kanap"  
+
+    },
+    {
+        "id":"pr4-SEO",
+        "title":"Optimisez un site web existant:",
+        "cover":"https://i.ibb.co/FWYTCcH/lapanthere-1.png",
+        "pictures":[
+            "https://i.ibb.co/FWYTCcH/lapanthere-1.png",
+            "https://i.ibb.co/W3vpZXJ/lapanthere-2.png",
+            "https://i.ibb.co/rw76ZxZ/lapanthere-3.png",
+            "https://i.ibb.co/VxkC7vk/lapanthere-4.png"
+        ],
+        "info":[
+            "Utiliser un domaine personalisé",
+            "Optimiser la taille et la vitesse d’un site web",
+            "Réaliser une recherche des bonnes pratiques en développement web",
+            "Écrire un code HTML et CSS maintenable",
+            "Assurer l'accessibilité d'un site web",
+            "Optimiser le référencement d'un site web"
+        ],
+        "urlProject":"https://la-panthere.fr/",
+        "urlExistent":"https://boogysh.github.io/la-panthere_initial/"
+
+    },
+    {   
+        "id":"pr3-ohmyfood",
+        "title":"Dynamisez une page web avec des animations CSS",
+        "cover":"https://i.ibb.co/vzkvNKm/ohmyfood-1.png",
+        "pictures":[
+            "https://i.ibb.co/FbhS61Q/ohmyfood-2.png",
+            "https://i.ibb.co/86GCBpg/ohmyfood-3.png",
+            "https://i.ibb.co/c6bjctk/ohmyfood-4.png",
+            "https://i.ibb.co/k8mxVB1/ohmyfood-5.png",
+            "https://i.ibb.co/wKKZ7y1/ohmyfood-6.png"
+        ],
+        "info":[
+            "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+            "Mettre en place son environnement Front-End",
+            "Assurer la cohérence graphique d'un site web",
+            "Mettre en place une structure de navigation pour un site web",
+            "Mettre en œuvre des effets CSS graphiques avancés"
+        ],
+        "urlProject":"https://boogysh.github.io/ohmyfood/"
+    },
+    {   
+        "id":"pr2-booki",
+        "title":"Transformez une maquette en site web avec html et css",
+        "cover": "https://i.ibb.co/MZPrf4P/booki-1.png",
+        "pictures":[
+            "https://i.ibb.co/B3bY7z6/booki-4.png",
+            "https://i.ibb.co/MZPrf4P/booki-1.png",
+            "https://i.ibb.co/9mD9LPZ/booki-2.png",
+            "https://i.ibb.co/gmkBVV3/booki-3.png",
+            "https://i.ibb.co/B3bY7z6/booki-4.png",
+            "https://i.ibb.co/LpX74Bh/booki-5.png"
+        ],
+        "info":[
+            "Découpage de la maquete",
+            "Réalisation de la page hébergements",
+            "Réalisation de la page activités",
+            "Utiliser des balises sémantiques",
+            "Réalisation de la partie responsive",
+            "Validation du code auprès du W3C"
+        ],
+        "urlProject":"https://boogysh.github.io/booki/"
+    }
+    
+]
