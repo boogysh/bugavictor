@@ -41,13 +41,11 @@
   }
 }
 @media all and (max-width: 767px) {
-  .bannerImg {
-    border-radius: 10px;
-  }
+  
   .bannerImg_about {
     height: 223px;
-    border-radius: 10px;
   }
+   
   .h1_home {
     font-size: 24px;
     padding-right: 102px;
@@ -62,7 +60,7 @@
   }
   .bannerImg {
     height: 120px;
-    border-radius: 0;
+   
   }
   .banner_title,
   .banner_title_dev {

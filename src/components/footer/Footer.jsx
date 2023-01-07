@@ -36,8 +36,8 @@ function Footer() {
             </a>
           </div>
         </div>
-        <h5 className="h5_footer">&copy; Boogysh. All right reserved. v_1.03</h5>
-        <h5 className="h6_footer">Updated :  06/01/2022</h5>
+        <h5 className="h5_footer">&copy; Boogysh. All right reserved. v_1.04</h5>
+        <h5 className="h6_footer">Updated :  07/01/2023</h5>
        
       </footer>
     )

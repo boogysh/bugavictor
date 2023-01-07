@@ -139,6 +139,7 @@ nav {
   margin: 0 auto;
 }
 
+
 @keyframes header_DD {
   0% {
     transform: translateY(-130%);
@@ -206,10 +207,10 @@ nav {
 
 .h3_pr_arch {
   position: absolute;
-  top: 10%;
+  top: 7%;
   color: #f1f1f1;
   text-shadow: 0 0 1px black;
-  font-size: 30px;
+  font-size: 36px;
   font-family: var(--h3_header);
   font-weight: 300;
   transform: scale(0.01);
@@ -296,19 +297,22 @@ nav {
 
 @media all and (max-width: 767px) {
   .banner_3x_container {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    display: none;
+    
+  }
+  .header_container:hover .banner_3x_container {
     display: none;
     flex-direction: column;
     height: auto;
     align-items: center;
-    /* height: 160px; */
   }
-  .header_container:hover .banner_3x_container {
+  .header_container:hover .banner_3x_container{
     display: flex;
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-    /* height: 160px; */
   }
+
   .banner_3x_item {
     width: 95%;
     margin-bottom: 10px;

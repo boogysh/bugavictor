@@ -13,3 +13,9 @@
     width: 80%;
   }
 }
+@media all and (max-width: 767px){
+  .dev_card_img_container{
+    width: 100%;
+  }
+} 
+  
