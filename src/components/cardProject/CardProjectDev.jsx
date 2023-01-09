@@ -20,6 +20,7 @@ function cardProjectDev({ images, title, info, id, urlProject, urlExistent }) {
           <div className="card_bg_hover">
             <h2>Découvrir le projet...</h2>
           </div>
+          <div className="card_content">
           <h2 className="card_title">{title} <a href="https://github.com/boogysh/la-panthere_initial/" className="urlExistent" >{urlExistent}</a></h2>
           <ul>
             {info.map((item) => (
@@ -29,6 +30,7 @@ function cardProjectDev({ images, title, info, id, urlProject, urlExistent }) {
               </li>
             ))}
           </ul>
+          </div>
         </div>
       </a>
     </div>

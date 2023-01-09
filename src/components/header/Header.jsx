@@ -117,6 +117,16 @@ function Header() {
     setIsOpen(isOpen === "nav_hidden" ? "" : "nav_hidden");
     setAnimated(isAnimated === "menu_anim" ? "" : "menu_anim");
   };
+
+  // const [visible, setVisible] = useState(true);
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setVisible(false);
+  //   }, 4000);
+  //   return () => clearTimeout(timer);
+  // }, []);
+
   return (
     <div onClick={bgHover} className="header_container">
       <div className="header_content">
@@ -160,16 +170,14 @@ function Header() {
       </div>
       {/* //------------------------------------------------------------- */}
       {/* <Banner3x addClass="header_DD_active"/>  */}
+
       <div className="banner_3x_container">
         <Link className="banner_3x_item bg_arch" to="/architecture">
           <div id="bg_arch_hover" className="item_bg_hover"></div>
           <h3 className="h3_pr_arch">Architecture</h3>
           <h4 className="h4_pr_arch">2004 - 2011</h4>
         </Link>
-        <Link
-          to="/batiment"
-          className="banner_3x_item bg_bat"
-        >
+        <Link to="/batiment" className="banner_3x_item bg_bat">
           <div id="bg_bat_hover" className="item_bg_hover"></div>
           <h3 className="h3_pr_bat">Bâtiment</h3>
           <h4 className="h4_pr_bat">2011 - 2021</h4>

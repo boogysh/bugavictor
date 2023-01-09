@@ -14,7 +14,7 @@ import "./App.css";
 function App() {
   return (
     // <Router basename="/cv/">
-    <Router basename="/cv/" >
+    <Router basename="/cv/">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -21,6 +21,9 @@ footer  2022 -> 2023
 ### 1.05
 banner_3x -> each item, then isActive, bg_hover and title are visible 
 
+### 1.06
+cardProject & cardProjectDev -> hover , title="Decouvrir le projet" centered on x, on y, bg_opacity= 0.07
+
 
 
 
