@@ -17,43 +17,140 @@ function Header() {
   const activeLink = "item_nav active";
   const normalLink = "item_nav";
 
-  const [isOpen, setIsOpen] = useState('nav_hidden')
-  const [isAnimated, setAnimated] = useState('')
+  const [isOpen, setIsOpen] = useState("nav_hidden");
+  const [isAnimated, setAnimated] = useState("");
+
+  const bgHover = () => {
+    const cv = document.querySelector("#cv");
+    const architecture = document.querySelector("#architecture");
+    const batiment = document.querySelector("#batiment");
+    const developpement = document.querySelector("#developpement");
+
+    const bg_arch_hover = document.querySelector("#bg_arch_hover");
+    const bg_bat_hover = document.querySelector("#bg_bat_hover");
+    const bg_dev_hover = document.querySelector("#bg_dev_hover");
+
+    const h3_pr_arch = document.querySelector(".h3_pr_arch");
+    const h3_pr_bat = document.querySelector(".h3_pr_bat");
+    const h3_pr_dev = document.querySelector(".h3_pr_dev");
+
+    cv.addEventListener("click", function () {
+      //add or remove item_bg_hover
+      bg_arch_hover.classList.remove("active");
+      bg_bat_hover.classList.remove("active");
+      bg_dev_hover.classList.remove("active");
+
+      // add or remove title to item of banner_3x
+      h3_pr_arch.classList.remove("h3_pr_arch_anim");
+      h3_pr_bat.classList.remove("h3_pr_arch_anim");
+      h3_pr_dev.classList.remove("h3_pr_arch_anim");
+    });
+
+    architecture.addEventListener("click", function () {
+      //add or remove item_bg_hover
+      bg_arch_hover.classList.add("active");
+      bg_bat_hover.classList.remove("active");
+      bg_dev_hover.classList.remove("active");
+
+      // add or remove title to item of banner_3x
+      h3_pr_arch.classList.add("h3_pr_arch_anim");
+      h3_pr_bat.classList.remove("h3_pr_arch_anim");
+      h3_pr_dev.classList.remove("h3_pr_arch_anim");
+    });
+    batiment.addEventListener("click", function () {
+      //add or remove item_bg_hover
+      bg_arch_hover.classList.remove("active");
+      bg_bat_hover.classList.add("active");
+      bg_dev_hover.classList.remove("active");
+
+      // add or remove title to item of banner_3x
+      h3_pr_arch.classList.remove("h3_pr_arch_anim");
+      h3_pr_bat.classList.add("h3_pr_arch_anim");
+      h3_pr_dev.classList.remove("h3_pr_arch_anim");
+    });
+    developpement.addEventListener("click", function () {
+      //add or remove item_bg_hover
+      bg_arch_hover.classList.remove("active");
+      bg_bat_hover.classList.remove("active");
+      bg_dev_hover.classList.add("active");
+
+      // add or remove title to item of banner_3x
+      h3_pr_arch.classList.remove("h3_pr_arch_anim");
+      h3_pr_bat.classList.remove("h3_pr_arch_anim");
+      h3_pr_dev.classList.add("h3_pr_arch_anim");
+    });
+    bg_arch_hover.addEventListener("click", function () {
+      //add or remove item_bg_hover
+      bg_arch_hover.classList.add("active");
+      bg_bat_hover.classList.remove("active");
+      bg_dev_hover.classList.remove("active");
+
+      // add or remove title to item of banner_3x
+      h3_pr_arch.classList.add("h3_pr_arch_anim");
+      h3_pr_bat.classList.remove("h3_pr_arch_anim");
+      h3_pr_dev.classList.remove("h3_pr_arch_anim");
+    });
+    bg_bat_hover.addEventListener("click", function () {
+      //add or remove item_bg_hover
+      bg_arch_hover.classList.remove("active");
+      bg_bat_hover.classList.add("active");
+      bg_dev_hover.classList.remove("active");
+
+      // add or remove title to item of banner_3x
+      h3_pr_arch.classList.remove("h3_pr_arch_anim");
+      h3_pr_bat.classList.add("h3_pr_arch_anim");
+      h3_pr_dev.classList.remove("h3_pr_arch_anim");
+    });
+    bg_dev_hover.addEventListener("click", function () {
+      bg_arch_hover.classList.remove("active");
+      bg_bat_hover.classList.remove("active");
+      bg_dev_hover.classList.add("active");
+
+      // add or remove title to item of banner_3x
+      h3_pr_arch.classList.remove("h3_pr_arch_anim");
+      h3_pr_bat.classList.remove("h3_pr_arch_anim");
+      h3_pr_dev.classList.add("h3_pr_arch_anim");
+    });
+  };
 
   const toggleNav = () => {
-    setIsOpen(isOpen === 'nav_hidden' ? '' : 'nav_hidden')
-    setAnimated(isAnimated === 'menu_anim' ? '' : 'menu_anim')
-  }
+    setIsOpen(isOpen === "nav_hidden" ? "" : "nav_hidden");
+    setAnimated(isAnimated === "menu_anim" ? "" : "menu_anim");
+  };
   return (
-    <div className="header_container">
+    <div onClick={bgHover} className="header_container">
       <div className="header_content">
         <div className="header_contact_container">
           <div className="header_contact">
             <h3 className="h3_header">Buga Victor</h3>
             <HeaderContact />
           </div>
-          <HeaderBurger toggle={toggleNav} Animation={isAnimated}/>
+          <HeaderBurger toggle={toggleNav} Animation={isAnimated} />
         </div>
         <nav className={isOpen}>
           <NavLink
+            id="cv"
             to="/"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
           >
             CV
           </NavLink>
           <NavLink
+            id="architecture"
             to="/architecture"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
           >
             Architecture
           </NavLink>
           <NavLink
+            id="batiment"
             to="/batiment"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
           >
             Bâtiment
           </NavLink>
           <NavLink
+            id="developpement"
             to="/developpement"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
           >
@@ -64,20 +161,22 @@ function Header() {
       {/* //------------------------------------------------------------- */}
       {/* <Banner3x addClass="header_DD_active"/>  */}
       <div className="banner_3x_container">
-        <Link to="/architecture" className="banner_3x_item bg_arch">
-          <div className="item_bg_hover"></div>
+        <Link className="banner_3x_item bg_arch" to="/architecture">
+          <div id="bg_arch_hover" className="item_bg_hover"></div>
           <h3 className="h3_pr_arch">Architecture</h3>
           <h4 className="h4_pr_arch">2004 - 2011</h4>
         </Link>
-
-        <Link to="/batiment" className="banner_3x_item bg_bat">
-          <div className="item_bg_hover"></div>
-          <h3 className="h3_pr_arch">Bâtiment</h3>
+        <Link
+          to="/batiment"
+          className="banner_3x_item bg_bat"
+        >
+          <div id="bg_bat_hover" className="item_bg_hover"></div>
+          <h3 className="h3_pr_bat">Bâtiment</h3>
           <h4 className="h4_pr_bat">2011 - 2021</h4>
         </Link>
         <Link to="/developpement" className="banner_3x_item bg_dev">
-          <div className="item_bg_hover"></div>
-          <h3 className="h3_pr_arch">Développement</h3>
+          <div id="bg_dev_hover" className="item_bg_hover"></div>
+          <h3 className="h3_pr_dev">Développement</h3>
           <div className="container_logos">
             <img src={html} alt="html logo" />
             <img src={css} alt="css logo" />
@@ -92,7 +191,6 @@ function Header() {
           </div>
         </Link>
       </div>
-      {/* header_DD_active ------------------------------------------------  */}
     </div>
   );
 }

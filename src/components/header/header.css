@@ -139,7 +139,6 @@ nav {
   margin: 0 auto;
 }
 
-
 @keyframes header_DD {
   0% {
     transform: translateY(-130%);
@@ -205,7 +204,7 @@ nav {
   display: none;
 }
 
-.h3_pr_arch {
+.h3_pr_arch,.h3_pr_bat,.h3_pr_dev {
   position: absolute;
   top: 7%;
   color: #f1f1f1;
@@ -214,7 +213,7 @@ nav {
   font-family: var(--h3_header);
   font-weight: 300;
   transform: scale(0.01);
-  /* animation: banner_titles 1s ease-in-out forwards; */
+  /* animation: banner_titles 1s ease-in-out forwards;  */
   animation-delay: 1s;
 }
 @keyframes banner_titles {
@@ -225,15 +224,23 @@ nav {
     transform: scale(1);
   }
 }
+.banner_3x_item:hover .h3_pr_arch,
+.banner_3x_item:hover .h3_pr_bat,
+.banner_3x_item:hover .h3_pr_dev{
+  animation: banner_titles 0.1s ease-in-out forwards;
+}
+.h3_pr_arch_anim {
+  animation: banner_titles 0.1s ease-in-out forwards;
+}
+
 .banner_3x_item:hover {
   box-shadow: 0 0 10px black;
 }
 .banner_3x_item:hover .item_bg_hover {
   display: block;
 }
-
-.banner_3x_item:hover .h3_pr_arch {
-  animation: banner_titles 0.1s ease-in-out forwards;
+.active.item_bg_hover {
+  display: block;
 }
 .h4_pr_arch,
 .h4_pr_bat,
@@ -262,7 +269,7 @@ nav {
 }
 .container_logos {
   position: absolute;
-  top: 40%;
+  top: 43%;
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -301,7 +308,6 @@ nav {
     height: auto;
     align-items: center;
     display: none;
-    
   }
   .header_container:hover .banner_3x_container {
     display: none;
@@ -309,7 +315,7 @@ nav {
     height: auto;
     align-items: center;
   }
-  .header_container:hover .banner_3x_container{
+  .header_container:hover .banner_3x_container {
     display: flex;
   }
 
@@ -349,7 +355,10 @@ nav {
   .item_bg_hover {
     height: 130px;
   }
-  .h3_pr_arch {
+  .h3_pr_arch,
+  .h3_pr_bat
+  .h3_pr_dev
+   {
     top: 5%;
   }
   .h4_pr_arch,
