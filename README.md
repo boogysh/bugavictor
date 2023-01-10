@@ -24,7 +24,7 @@ banner_3x -> each item, then isActive, bg_hover and title are visible
 ### 1.06
 cardProject & cardProjectDev -> hover , title="Decouvrir le projet" centered on x, on y, bg_opacity= 0.07
 
-### 1.07 
+### 1.07  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 fix the 404 error on refresh
 Attention: 
     In public/404.html L25 -> 0 for custom domain
