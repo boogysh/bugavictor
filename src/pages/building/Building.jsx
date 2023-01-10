@@ -11,6 +11,8 @@ export default function Building() {
   const { data, isLoading, error } = UseFetch(`https://boogysh.github.io/cv-api/data_bat.json`); //UseFetch(`/pr_bat/data.json`)
   console.log(data);
 
+  
+
   if (error) return <Error500 />;
   return isLoading ? (
     <Loader />

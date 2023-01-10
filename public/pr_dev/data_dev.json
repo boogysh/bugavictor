@@ -2,14 +2,15 @@
     {
         "id":"pr7-kasa",
         "title":"Créez une application web de location immobilière avec React",
-        "cover":"https://i.ibb.co/dJvmPMG/1.png",
+        "cover":"https://boogysh.github.io/cv-api/images/dev/kasa/1.png",
         "pictures":[
-            "https://i.ibb.co/dJvmPMG/1.png",
-            "https://i.ibb.co/jRtnLHy/2.png",
-            "https://i.ibb.co/cJ6NNBn/3.png",
-            "https://i.ibb.co/0JygDRY/4.png",
-            "https://i.ibb.co/B6WV6zP/5.png",
-            "https://i.ibb.co/9svS5xs/404.png"
+            "https://boogysh.github.io/cv-api/images/dev/kasa/1.png",
+            "https://boogysh.github.io/cv-api/images/dev/kasa/2.png",
+            "https://boogysh.github.io/cv-api/images/dev/kasa/3.png",
+            "https://boogysh.github.io/cv-api/images/dev/kasa/4.png",
+            "https://boogysh.github.io/cv-api/images/dev/kasa/5.png",
+            "https://boogysh.github.io/cv-api/images/dev/kasa/404.png"
+            
         ],
         "info":[
             "Découpage en composants modulaires et réutilisables",
@@ -24,14 +25,16 @@
     {
         "id":"pr6-api-piquante",
         "title":"Construisez une API sécurisée pour une application d'avis gastronomiques",
-        "cover":"https://i.ibb.co/WB5BVPM/1.png",
+        "cover":"https://boogysh.github.io/cv-api/images/dev/piquante/1.png",
         "pictures":[
-            "https://i.ibb.co/WB5BVPM/1.png",
-            "https://i.ibb.co/VC2Jq4p/2.png",
-            "https://i.ibb.co/HDZrRQX/4.png",
-            "https://i.ibb.co/mc8Cgr1/5.png",
-            "https://i.ibb.co/ZxR1vB5/6.png",
-            "https://i.ibb.co/pdLFwDB/7.png"
+            "https://boogysh.github.io/cv-api/images/dev/piquante/1.png",
+            "https://boogysh.github.io/cv-api/images/dev/piquante/2.png",
+            "https://boogysh.github.io/cv-api/images/dev/piquante/3.png",
+            "https://boogysh.github.io/cv-api/images/dev/piquante/4.png",
+            "https://boogysh.github.io/cv-api/images/dev/piquante/5.png",
+            "https://boogysh.github.io/cv-api/images/dev/piquante/6.png",
+            "https://boogysh.github.io/cv-api/images/dev/piquante/7.png"
+            
         ],
         "info":[
             "Toutes les routes dispose d'une autorisation type: Bearer <token>",
@@ -45,17 +48,18 @@
     {
         "id":"pr5-eCommerce",
         "title":"Construisez un site e-commerce en JavaScript",
-        "cover":"",
+        "cover":"https://boogysh.github.io/cv-api/images/dev/kanap/1.png",
         "pictures":[
-            "https://i.ibb.co/ZcZ0xK1/1.png",
-            "https://i.ibb.co/QK0D41D/kanap-2.png",
-            "https://i.ibb.co/kQMW888/kanap-3.png",
-            "https://i.ibb.co/4ZPWcMd/kanap-4.png",
-            "https://i.ibb.co/yVnYkQD/kanap-5.png",
-            "https://i.ibb.co/Y09mLQh/kanap-6.png",
-            "https://i.ibb.co/C9x27jK/kanap-7.png",
-            "https://i.ibb.co/k8SN2y2/kanap-8.png",
-            "https://i.ibb.co/kJLPmY3/kanap-9.png"
+            "https://boogysh.github.io/cv-api/images/dev/kanap/1.png",
+            "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-2.png",
+            "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-3.png",
+            "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-4.png",
+            "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-5.png",
+            "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-6.png",
+            "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-7.png",
+            "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-8.png",
+            "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-9.png"
+            
         ],
         "info":[
             "Gérer des événements JavaScript",
@@ -69,12 +73,13 @@
     {
         "id":"pr4-SEO",
         "title":"Optimisez un site web existant:",
-        "cover":"https://i.ibb.co/FWYTCcH/lapanthere-1.png",
+        "cover":"https://boogysh.github.io/cv-api/images/dev/lapanthere.fr/lapanthere-1.png",
         "pictures":[
-            "https://i.ibb.co/FWYTCcH/lapanthere-1.png",
-            "https://i.ibb.co/W3vpZXJ/lapanthere-2.png",
-            "https://i.ibb.co/rw76ZxZ/lapanthere-3.png",
-            "https://i.ibb.co/VxkC7vk/lapanthere-4.png"
+            "https://boogysh.github.io/cv-api/images/dev/lapanthere.fr/lapanthere-1.png",
+            "https://boogysh.github.io/cv-api/images/dev/lapanthere.fr/lapanthere-2.png",
+            "https://boogysh.github.io/cv-api/images/dev/lapanthere.fr/lapanthere-3.png",
+            "https://boogysh.github.io/cv-api/images/dev/lapanthere.fr/lapanthere-4.png"
+            
         ],
         "info":[
             "Utiliser un domaine personalisé",
@@ -91,13 +96,15 @@
     {   
         "id":"pr3-ohmyfood",
         "title":"Dynamisez une page web avec des animations CSS",
-        "cover":"https://i.ibb.co/vzkvNKm/ohmyfood-1.png",
+        "cover":"https://boogysh.github.io/cv-api/images/dev/ohmyfood/ohmyfood-1.png",
         "pictures":[
-            "https://i.ibb.co/FbhS61Q/ohmyfood-2.png",
-            "https://i.ibb.co/86GCBpg/ohmyfood-3.png",
-            "https://i.ibb.co/c6bjctk/ohmyfood-4.png",
-            "https://i.ibb.co/k8mxVB1/ohmyfood-5.png",
-            "https://i.ibb.co/wKKZ7y1/ohmyfood-6.png"
+            "https://boogysh.github.io/cv-api/images/dev/ohmyfood/ohmyfood-1.png",
+            "https://boogysh.github.io/cv-api/images/dev/ohmyfood/ohmyfood-2.png",
+            "https://boogysh.github.io/cv-api/images/dev/ohmyfood/ohmyfood-3.png",
+            "https://boogysh.github.io/cv-api/images/dev/ohmyfood/ohmyfood-4.png",
+            "https://boogysh.github.io/cv-api/images/dev/ohmyfood/ohmyfood-5.png",
+            "https://boogysh.github.io/cv-api/images/dev/ohmyfood/ohmyfood-6.png"
+            
         ],
         "info":[
             "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
@@ -111,14 +118,14 @@
     {   
         "id":"pr2-booki",
         "title":"Transformez une maquette en site web avec html et css",
-        "cover": "https://i.ibb.co/MZPrf4P/booki-1.png",
+        "cover": "https://boogysh.github.io/cv-api/images/dev/booki/booki-1.png",
         "pictures":[
-            "https://i.ibb.co/B3bY7z6/booki-4.png",
-            "https://i.ibb.co/MZPrf4P/booki-1.png",
-            "https://i.ibb.co/9mD9LPZ/booki-2.png",
-            "https://i.ibb.co/gmkBVV3/booki-3.png",
-            "https://i.ibb.co/B3bY7z6/booki-4.png",
-            "https://i.ibb.co/LpX74Bh/booki-5.png"
+            "https://boogysh.github.io/cv-api/images/dev/booki/booki-1.png",
+            "https://boogysh.github.io/cv-api/images/dev/booki/booki-2.png",
+            "https://boogysh.github.io/cv-api/images/dev/booki/booki-3.png",
+            "https://boogysh.github.io/cv-api/images/dev/booki/booki-4.png",
+            "https://boogysh.github.io/cv-api/images/dev/booki/booki-5.png"
+            
         ],
         "info":[
             "Découpage de la maquete",

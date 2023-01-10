@@ -14,7 +14,7 @@ import "./App.css";
 function App() {
   return (
     // <Router basename="/cv/">
-    <Router basename="/cv/">
+    <Router >
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path="/batiment" element={<Building />} />
         <Route path="/batiment/:id" element={<OneProject />} />
         <Route path="/architecture/:id" element={<OneProject />} />
-        <Route path="/developpement" element={<Developpement />} />
+        <Route path="/developpement" element={<Developpement />}  />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
