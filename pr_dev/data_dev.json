@@ -1,4 +1,37 @@
-[   
+[   {
+    "id":"pr8-castle",
+    "title":"Créez une application web avec des éléments e-commerce",
+    "cover":"https://boogysh.github.io/cv-api/images/dev/kasa/1.png",
+    "pictures":[
+        "https://boogysh.github.io/cv-api/images/dev/castle/1.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/2.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/3.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/4.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/5.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/6.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/7.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/8.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/9.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/10.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/11.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/12.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/13.jpg",
+        "https://boogysh.github.io/cv-api/images/dev/castle/14.jpg"
+        
+        
+    ],
+    "info":[
+        "Utilisation du redux et react-redux",
+        "Réalisation d'un petit back-end pour gerer les fetch GET, POST",
+        "Utilisation de la BD MongoDB et mongoose",
+        "Envoyer les messages et les commandes sur la base de données",
+        "Recherche des commandes avec l'email où le numéro de la commande",
+        "Afficher l'ensamble de l'aplication en ligne avec Vercel"
+        
+        
+    ],
+    "urlProject":"https://castle-boogysh.vercel.app/"
+},
     {
         "id":"pr7-kasa",
         "title":"Créez une application web de location immobilière avec React",
@@ -29,7 +62,6 @@
         "pictures":[
             "https://boogysh.github.io/cv-api/images/dev/piquante/1.png",
             "https://boogysh.github.io/cv-api/images/dev/piquante/2.png",
-            "https://boogysh.github.io/cv-api/images/dev/piquante/3.png",
             "https://boogysh.github.io/cv-api/images/dev/piquante/4.png",
             "https://boogysh.github.io/cv-api/images/dev/piquante/5.png",
             "https://boogysh.github.io/cv-api/images/dev/piquante/6.png",
@@ -50,7 +82,7 @@
         "title":"Construisez un site e-commerce en JavaScript",
         "cover":"https://boogysh.github.io/cv-api/images/dev/kanap/1.png",
         "pictures":[
-            "https://boogysh.github.io/cv-api/images/dev/kanap/1.png",
+            "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-1.png",
             "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-2.png",
             "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-3.png",
             "https://boogysh.github.io/cv-api/images/dev/kanap/kanap-4.png",
@@ -113,7 +145,7 @@
             "Mettre en place une structure de navigation pour un site web",
             "Mettre en œuvre des effets CSS graphiques avancés"
         ],
-        "urlProject":"https://boogysh.github.io/ohmyfood/"
+        "urlProject":"https://boogysh.github.io/OCR_PR3/"
     },
     {   
         "id":"pr2-booki",
