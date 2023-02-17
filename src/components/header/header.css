@@ -342,6 +342,9 @@ nav {
     width: 95%;
     margin-bottom: 10px;
   }
+  .banner_3x_item:first-of-type{
+    margin-top: 10px;
+  }
   .container_logos {
     width: 50%;
   }

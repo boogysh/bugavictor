@@ -75,10 +75,31 @@ function Header() {
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
   );
+  const [matchesMobileLarge, setmatchesMobileLarge] = useState(
+    window.matchMedia("(min-width: 540px) and (max-width:767px)")
+      .matchesMobileLarge
+  );
+  const [matchesMobileMedium, setmatchesMobileMedium] = useState(
+    window.matchMedia("(min-width: 370px) and (max-width:539px)")
+      .matchesMobileMedium
+  );
+  const [matchesMobileSmall, setmatchesMobileSmall] = useState(
+    window.matchMedia("(min-width: 370px) and (max-width:539px)")
+      .matchesMobileMedium
+  );
   useEffect(() => {
     window
       .matchMedia("(min-width: 768px)")
       .addEventListener("change", (e) => setMatches(e.matches));
+    window
+      .matchMedia("(min-width: 540px) and (max-width:767px)")
+      .addEventListener("change", (e) => setmatchesMobileLarge(e.matches));
+    window
+      .matchMedia("(min-width: 370px) and (max-width:539px)")
+      .addEventListener("change", (e) => setmatchesMobileMedium(e.matches));
+    window
+      .matchMedia("(max-width: 370px)")
+      .addEventListener("change", (e) => setmatchesMobileSmall(e.matches));
   }, []);
 
   window.onscroll = function () {
@@ -88,11 +109,20 @@ function Header() {
     var element = document.querySelector(".header_content");
     const scroll =
       document.body.scrollTop > 210 || document.documentElement.scrollTop > 210;
-    const scrollMobile =
+    const scrollMobileLarge =
       document.body.scrollTop > 595 || document.documentElement.scrollTop > 595;
+    const scrollMobileMedium =
+      document.body.scrollTop > 530 || document.documentElement.scrollTop > 530;
+    const scrollMobileSmall =
+      document.body.scrollTop > 435 || document.documentElement.scrollTop > 435;
     if (matches && scroll) {
       element.classList.add("fixed");
-    } else if (!matches && scrollMobile) {
+      // } else if (!matches && scrollMobile) {
+    } else if (matchesMobileLarge && scrollMobileLarge) {
+      element.classList.add("fixed");
+    } else if (matchesMobileMedium && scrollMobileMedium) {
+      element.classList.add("fixed");
+    } else if (matchesMobileSmall && scrollMobileSmall) {
       element.classList.add("fixed");
     } else {
       element.classList.remove("fixed");
@@ -109,7 +139,11 @@ function Header() {
 
       <div className="banner_3x_container autohide">
         <div className="banner_3x_item bg_arch">
-          <Link className="linkAbsolute" onClick={addBgAndTitleArch} to="/architecture"></Link>
+          <Link
+            className="linkAbsolute"
+            onClick={addBgAndTitleArch}
+            to="/architecture"
+          ></Link>
           <div
             id="bg_arch_hover"
             className={
@@ -124,7 +158,11 @@ function Header() {
           <h4 className="h4_pr_arch">2004 - 2011</h4>
         </div>
         <div className="banner_3x_item bg_bat">
-          <Link className="linkAbsolute" onClick={addBgAndTitleBat} to="/batiment"></Link>
+          <Link
+            className="linkAbsolute"
+            onClick={addBgAndTitleBat}
+            to="/batiment"
+          ></Link>
           <div
             id="bg_bat_hover"
             className={
@@ -137,7 +175,11 @@ function Header() {
           <h4 className="h4_pr_bat">2011 - 2021</h4>
         </div>
         <div className="banner_3x_item bg_dev">
-          <Link className="linkAbsolute" onClick={addBgAndTitleDev} to="/developpement"></Link>
+          <Link
+            className="linkAbsolute"
+            onClick={addBgAndTitleDev}
+            to="/developpement"
+          ></Link>
           <div
             id="bg_dev_hover"
             className={
