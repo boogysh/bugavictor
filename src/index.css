@@ -29,6 +29,7 @@ body {
 
   --bg_color: #f7f7f7;
   --bg_body: rgb(253, 239, 239);
+  --bg_body: rgb(255, 247, 247);
   --bg_body_hover: rgb(224, 209, 209);
   /* --bg_body_hover: rgb(235, 222, 222); */
 

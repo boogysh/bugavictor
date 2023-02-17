@@ -3,34 +3,21 @@
     "title":"Créez une application web avec des éléments e-commerce",
     "cover":"https://boogysh.github.io/cv-api/images/dev/kasa/1.png",
     "pictures":[
-        "https://boogysh.github.io/cv-api/images/dev/castle/1.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/2.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/3.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/4.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/5.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/6.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/7.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/8.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/9.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/10.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/11.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/12.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/13.jpg",
-        "https://boogysh.github.io/cv-api/images/dev/castle/14.jpg"
-        
+        "https://boogysh.github.io/cv-api/images/dev/kasa/1.png",
+        "https://boogysh.github.io/cv-api/images/dev/kasa/2.png",
+        "https://boogysh.github.io/cv-api/images/dev/kasa/3.png",
+        "https://boogysh.github.io/cv-api/images/dev/kasa/4.png",
+        "https://boogysh.github.io/cv-api/images/dev/kasa/5.png",
+        "https://boogysh.github.io/cv-api/images/dev/kasa/404.png"
         
     ],
     "info":[
-        "Utilisation du redux et react-redux",
-        "Réalisation d'un petit back-end pour gerer les fetch GET, POST",
-        "Utilisation de la BD MongoDB et mongoose",
-        "Envoyer les messages et les commandes sur la base de données",
-        "Recherche des commandes avec l'email où le numéro de la commande",
-        "Afficher l'ensamble de l'aplication en ligne avec Vercel"
-        
+        "fghfgh",
+        "fghfg",
+        "fghfg"
         
     ],
-    "urlProject":"https://castle-boogysh.vercel.app/"
+    "urlProject":"https://boogysh.github.io/kasa/"
 },
     {
         "id":"pr7-kasa",

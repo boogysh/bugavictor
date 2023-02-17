@@ -7,8 +7,9 @@ import { UseFetch } from "../../hooks/useFetch";
 import Error500 from "../../components/errors/Error500";
 import CardProjectDev from "../../components/cardProject/CardProjectDev";
 export default function Developpement() {
-  const { data, isLoading, error } = UseFetch(`https://boogysh.github.io/cv-api/data_dev.json`); //UseFetch(`/pr_dev/data.json`)
-  console.log(data);
+  // const { data, isLoading, error } = UseFetch(`https://boogysh.github.io/cv-api/data_dev.json`); //UseFetch(`/pr_dev/data.json`)
+  const { data, isLoading, error } = UseFetch(`/pr_dev/data_dev.json`); //UseFetch(`/pr_dev/data.json`)
+  // console.log(data);
 
   if (error) return <Error500 />;
   return isLoading ? (
@@ -22,6 +23,7 @@ export default function Developpement() {
           const { id, pictures, title, info, urlProject, urlExistent } = item;
           return (
             <CardProjectDev
+              key={id}
               images={pictures}
               title={title}
               info={info}

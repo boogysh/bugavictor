@@ -5,6 +5,8 @@
   border-radius: 10px 0 0 10px;
   position: relative;
   background-color: var(--bg_body_dark);
+  border: 10px solid var(--bg_body_dark);
+  
 }
 .arrow_container {
   width: 100%;
@@ -48,10 +50,11 @@
 @media all and (max-width: 767px) {
   .slider_content {
     height: 255px;
-    border-radius: 0;
+    
+    border-radius: 5px 0 0 5px;
   }
   .slider_img {
-    border-radius: 0;
+    border-radius: 5px 0 0 5px;
   }
   .slider_btn img {
     width: 30px;
