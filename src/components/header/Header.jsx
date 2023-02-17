@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 // import Banner3x from "../banner3x/Banner3x"
@@ -20,97 +20,49 @@ function Header() {
   const [isOpen, setIsOpen] = useState("nav_hidden");
   const [isAnimated, setAnimated] = useState("");
 
-  const bgHover = () => {
-    const cv = document.querySelector("#cv");
-    const architecture = document.querySelector("#architecture");
-    const batiment = document.querySelector("#batiment");
-    const developpement = document.querySelector("#developpement");
+  const [isBG_arch_hover, setBG_arch_hover] = useState(false);
+  const [isBG_bat_hover, setBG_bat_hover] = useState(false);
+  const [isBG_dev_hover, setBG_dev_hover] = useState(false);
 
-    const bg_arch_hover = document.querySelector("#bg_arch_hover");
-    const bg_bat_hover = document.querySelector("#bg_bat_hover");
-    const bg_dev_hover = document.querySelector("#bg_dev_hover");
+  const [isH3Arch, setH3Arch] = useState(false);
+  const [isH3Bat, setH3Bat] = useState(false);
+  const [isH3Dev, setH3Dev] = useState(false);
 
-    const h3_pr_arch = document.querySelector(".h3_pr_arch");
-    const h3_pr_bat = document.querySelector(".h3_pr_bat");
-    const h3_pr_dev = document.querySelector(".h3_pr_dev");
+  const addBgAndTitleArch = () => {
+    setBG_arch_hover(true);
+    setBG_bat_hover(false);
+    setBG_dev_hover(false);
 
-    cv.addEventListener("click", function () {
-      //add or remove item_bg_hover
-      bg_arch_hover.classList.remove("active");
-      bg_bat_hover.classList.remove("active");
-      bg_dev_hover.classList.remove("active");
+    setH3Arch(true);
+    setH3Bat(false);
+    setH3Dev(false);
+  };
+  const addBgAndTitleBat = () => {
+    setBG_arch_hover(false);
+    setBG_bat_hover(true);
+    setBG_dev_hover(false);
 
-      // add or remove title to item of banner_3x
-      h3_pr_arch.classList.remove("h3_pr_arch_anim");
-      h3_pr_bat.classList.remove("h3_pr_arch_anim");
-      h3_pr_dev.classList.remove("h3_pr_arch_anim");
-    });
+    setH3Arch(false);
+    setH3Bat(true);
+    setH3Dev(false);
+  };
+  const addBgAndTitleDev = () => {
+    setBG_arch_hover(false);
+    setBG_bat_hover(false);
+    setBG_dev_hover(true);
 
-    architecture.addEventListener("click", function () {
-      //add or remove item_bg_hover
-      bg_arch_hover.classList.add("active");
-      bg_bat_hover.classList.remove("active");
-      bg_dev_hover.classList.remove("active");
+    setH3Arch(false);
+    setH3Bat(false);
+    setH3Dev(true);
+  };
+  const removeAllBgAndTitles = () => {
+    setBG_arch_hover(false);
+    setBG_bat_hover(false);
+    setBG_dev_hover(false);
 
-      // add or remove title to item of banner_3x
-      h3_pr_arch.classList.add("h3_pr_arch_anim");
-      h3_pr_bat.classList.remove("h3_pr_arch_anim");
-      h3_pr_dev.classList.remove("h3_pr_arch_anim");
-    });
-    batiment.addEventListener("click", function () {
-      //add or remove item_bg_hover
-      bg_arch_hover.classList.remove("active");
-      bg_bat_hover.classList.add("active");
-      bg_dev_hover.classList.remove("active");
-
-      // add or remove title to item of banner_3x
-      h3_pr_arch.classList.remove("h3_pr_arch_anim");
-      h3_pr_bat.classList.add("h3_pr_arch_anim");
-      h3_pr_dev.classList.remove("h3_pr_arch_anim");
-    });
-    developpement.addEventListener("click", function () {
-      //add or remove item_bg_hover
-      bg_arch_hover.classList.remove("active");
-      bg_bat_hover.classList.remove("active");
-      bg_dev_hover.classList.add("active");
-
-      // add or remove title to item of banner_3x
-      h3_pr_arch.classList.remove("h3_pr_arch_anim");
-      h3_pr_bat.classList.remove("h3_pr_arch_anim");
-      h3_pr_dev.classList.add("h3_pr_arch_anim");
-    });
-    bg_arch_hover.addEventListener("click", function () {
-      //add or remove item_bg_hover
-      bg_arch_hover.classList.add("active");
-      bg_bat_hover.classList.remove("active");
-      bg_dev_hover.classList.remove("active");
-
-      // add or remove title to item of banner_3x
-      h3_pr_arch.classList.add("h3_pr_arch_anim");
-      h3_pr_bat.classList.remove("h3_pr_arch_anim");
-      h3_pr_dev.classList.remove("h3_pr_arch_anim");
-    });
-    bg_bat_hover.addEventListener("click", function () {
-      //add or remove item_bg_hover
-      bg_arch_hover.classList.remove("active");
-      bg_bat_hover.classList.add("active");
-      bg_dev_hover.classList.remove("active");
-
-      // add or remove title to item of banner_3x
-      h3_pr_arch.classList.remove("h3_pr_arch_anim");
-      h3_pr_bat.classList.add("h3_pr_arch_anim");
-      h3_pr_dev.classList.remove("h3_pr_arch_anim");
-    });
-    bg_dev_hover.addEventListener("click", function () {
-      bg_arch_hover.classList.remove("active");
-      bg_bat_hover.classList.remove("active");
-      bg_dev_hover.classList.add("active");
-
-      // add or remove title to item of banner_3x
-      h3_pr_arch.classList.remove("h3_pr_arch_anim");
-      h3_pr_bat.classList.remove("h3_pr_arch_anim");
-      h3_pr_dev.classList.add("h3_pr_arch_anim");
-    });
+    setH3Arch(false);
+    setH3Bat(false);
+    setH3Dev(false);
   };
 
   const toggleNav = () => {
@@ -118,73 +70,84 @@ function Header() {
     setAnimated(isAnimated === "menu_anim" ? "" : "menu_anim");
   };
 
-  // const [visible, setVisible] = useState(true);
+  //---------scroll limit-----------------
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setVisible(false);
-  //   }, 4000);
-  //   return () => clearTimeout(timer);
-  // }, []);
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  function scrollFunction() {
+    var element = document.querySelector(".header_content");
+    const scroll =
+      document.body.scrollTop > 210 || document.documentElement.scrollTop > 210;
+    const scrollMobile =
+      document.body.scrollTop > 595 || document.documentElement.scrollTop > 595;
+    if (matches && scroll) {
+      element.classList.add("fixed");
+    } else if (!matches && scrollMobile) {
+      element.classList.add("fixed");
+    } else {
+      element.classList.remove("fixed");
+    }
+  }
+  //------------------------------------
 
   return (
-    <div onClick={bgHover} className="header_container">
-      <div className="header_content">
-        <div className="header_contact_container">
-          <div className="header_contact">
-            <h3 className="h3_header">Buga Victor</h3>
-            <HeaderContact />
-          </div>
-          <HeaderBurger toggle={toggleNav} Animation={isAnimated} />
-        </div>
-        <nav className={isOpen}>
-          <NavLink
-            id="cv"
-            to="/"
-            className={({ isActive }) => (isActive ? activeLink : normalLink)}
-          >
-            CV
-          </NavLink>
-          <NavLink
-            id="architecture"
-            to="/architecture"
-            className={({ isActive }) => (isActive ? activeLink : normalLink)}
-          >
-            Architecture
-          </NavLink>
-          <NavLink
-            id="batiment"
-            to="/batiment"
-            className={({ isActive }) => (isActive ? activeLink : normalLink)}
-          >
-            Bâtiment
-          </NavLink>
-          <NavLink
-            id="developpement"
-            to="/developpement"
-            className={({ isActive }) => (isActive ? activeLink : normalLink)}
-          >
-            Développement
-          </NavLink>
-        </nav>
-      </div>
-      {/* //------------------------------------------------------------- */}
+    // <div onClick={bgHover} className="header_container">
+    <div className="header_container">
+      {/* ----------------------- */}
+
       {/* <Banner3x addClass="header_DD_active"/>  */}
 
-      <div className="banner_3x_container">
-        <Link className="banner_3x_item bg_arch" to="/architecture">
-          <div id="bg_arch_hover" className="item_bg_hover"></div>
-          <h3 className="h3_pr_arch">Architecture</h3>
+      <div className="banner_3x_container autohide">
+        <div className="banner_3x_item bg_arch">
+          <Link className="linkAbsolute" onClick={addBgAndTitleArch} to="/architecture"></Link>
+          <div
+            id="bg_arch_hover"
+            className={
+              isBG_arch_hover ? "item_bg_hover active" : "item_bg_hover"
+            }
+          ></div>
+          <h3
+            className={isH3Arch ? "h3_pr_arch h3_pr_arch_anim" : "h3_pr_arch"}
+          >
+            Architecture
+          </h3>
           <h4 className="h4_pr_arch">2004 - 2011</h4>
-        </Link>
-        <Link to="/batiment" className="banner_3x_item bg_bat">
-          <div id="bg_bat_hover" className="item_bg_hover"></div>
-          <h3 className="h3_pr_bat">Bâtiment</h3>
+        </div>
+        <div className="banner_3x_item bg_bat">
+          <Link className="linkAbsolute" onClick={addBgAndTitleBat} to="/batiment"></Link>
+          <div
+            id="bg_bat_hover"
+            className={
+              isBG_bat_hover ? "item_bg_hover active" : "item_bg_hover"
+            }
+          ></div>
+          <h3 className={isH3Bat ? "h3_pr_bat h3_pr_arch_anim" : "h3_pr_bat"}>
+            Bâtiment
+          </h3>
           <h4 className="h4_pr_bat">2011 - 2021</h4>
-        </Link>
-        <Link to="/developpement" className="banner_3x_item bg_dev">
-          <div id="bg_dev_hover" className="item_bg_hover"></div>
-          <h3 className="h3_pr_dev">Développement</h3>
+        </div>
+        <div className="banner_3x_item bg_dev">
+          <Link className="linkAbsolute" onClick={addBgAndTitleDev} to="/developpement"></Link>
+          <div
+            id="bg_dev_hover"
+            className={
+              isBG_dev_hover ? "item_bg_hover active" : "item_bg_hover"
+            }
+          ></div>
+
+          <h3 className={isH3Dev ? "h3_pr_dev h3_pr_arch_anim" : "h3_pr_dev"}>
+            Développement
+          </h3>
           <div className="container_logos">
             <img src={html} alt="html logo" />
             <img src={css} alt="css logo" />
@@ -197,8 +160,53 @@ function Header() {
             <h4 className="h4_pr_dev">2021... </h4>
             <img src={balise_ferm} alt="balise fermante" />
           </div>
-        </Link>
+        </div>
       </div>
+
+      <div className="header_content scroll">
+        <div className="header_contact_container">
+          <div className="header_contact">
+            <h3 className="h3_header">Buga Victor</h3>
+            <HeaderContact />
+          </div>
+          <HeaderBurger toggle={toggleNav} Animation={isAnimated} />
+        </div>
+        <nav className={isOpen}>
+          <NavLink
+            onClick={removeAllBgAndTitles}
+            id="cv"
+            to="/"
+            className={({ isActive }) => (isActive ? activeLink : normalLink)}
+          >
+            CV
+          </NavLink>
+          <NavLink
+            onClick={addBgAndTitleArch}
+            id="architecture"
+            to="/architecture"
+            className={({ isActive }) => (isActive ? activeLink : normalLink)}
+          >
+            Architecture
+          </NavLink>
+          <NavLink
+            onClick={addBgAndTitleBat}
+            id="batiment"
+            to="/batiment"
+            className={({ isActive }) => (isActive ? activeLink : normalLink)}
+          >
+            Bâtiment
+          </NavLink>
+          <NavLink
+            onClick={addBgAndTitleDev}
+            id="developpement"
+            to="/developpement"
+            className={({ isActive }) => (isActive ? activeLink : normalLink)}
+          >
+            Développement
+          </NavLink>
+        </nav>
+      </div>
+      {/* //------------------------------------------------------------- */}
     </div>
   );
 }

@@ -3,6 +3,7 @@ import DefaultImage from "../../assets/imgDefault.png";
 import "./cardProject.css";
 import Slider from "../slider/Slider";
 import { Link } from "react-router-dom";
+//import { uuid } from 'uuidv4';
 
 function CardProject({ images, title, info, id }) {
   const [uri, setUri] = useState();
@@ -27,9 +28,9 @@ function CardProject({ images, title, info, id }) {
           <div className="card_content">
             <h2 className="card_title">{title}</h2>
             <ul>
-              {info.map((item) => (
-                <li>
-                  <span className="span_li">✅</span>
+              {info.map((item,i) => (
+                <li key={i}>
+                  <span  className="span_li">✅</span>
                   {item}
                 </li>
               ))}
