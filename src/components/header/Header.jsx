@@ -131,6 +131,7 @@ function Header() {
     }
   };
   window.onscroll = scrollFunction;
+  window.onload = scrollFunction;
   // window.onscroll  = function () {
   //   scrollFunction();
   // };
