@@ -1,5 +1,6 @@
 import { UseFetch } from "../../hooks/useFetch";
 import "./architecture.css";
+import "../../components/header/header.css"
 import CardProject from "../../components/cardProject/CardProject";
 import Loader from "../../components/loader/Loader";
 import Error500 from "../../components/errors/Error500";
@@ -14,7 +15,8 @@ export default function Architecture() {
   return isLoading ? (
     <Loader />
   ) : (
-    <main className="main_architecture">
+    // <main className="main_architecture main-scroll">
+    <main className="main_architecture main-scroll">
       {/* <Banner3x /> */}
       <Banner src={banner} title="Architecture" />
       <section id="cards">

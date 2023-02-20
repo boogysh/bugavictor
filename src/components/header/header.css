@@ -30,11 +30,15 @@
   background-color: var(--bg_body_hover);
   z-index: 99;
 }
-
-.fixed{
+/* -------------------- */
+.fixed {
   position: fixed;
-  top:0px;
+  top: 0px;
 }
+.padding_fixed {
+  padding-top: 60px;
+}
+/* ----------------------- */
 .header_contact_container {
   display: flex;
   align-items: center;
@@ -89,12 +93,6 @@ nav {
 }
 
 @media all and (max-width: 767px) {
-  /* .header_container {
-    height: auto;
-  } */
-  /* .header_container:hover {
-    height: auto;
-  } */
   .header_content {
     width: 100%;
     padding-top: 10px;
@@ -111,7 +109,6 @@ nav {
     width: auto;
     align-items: center;
     padding-top: 20px;
-    
   }
   .nav_hidden {
     display: none;
@@ -145,7 +142,8 @@ nav {
   width: 100%;
   /* height: 0px; */
   height: auto;
-  padding: 0.75% 0.25%;
+  /* padding: 0.75% 0.25%; */
+  padding: 15px 10px;
   margin: 0 auto;
 }
 
@@ -178,13 +176,12 @@ nav {
   animation: header_DD 0.8s forwards;
   position: relative;
 }
-.linkAbsolute{
+.linkAbsolute {
   position: absolute;
   width: 100%;
   height: 100%;
   /* background-color: red; */
   z-index: 10;
-
 }
 
 .bg_arch {
@@ -227,7 +224,7 @@ nav {
 .h3_pr_bat,
 .h3_pr_dev {
   position: absolute;
-  
+
   top: 7%;
   color: #f1f1f1;
   text-shadow: 0 0 1px black;
@@ -326,23 +323,26 @@ nav {
 }
 
 @media all and (max-width: 767px) {
+  /* ---------------- */
+  .padding_fixed {
+    padding-top: 53px;
+  }
+  /* ---------------- */
   .banner_3x_container {
     flex-direction: column;
     height: auto;
     align-items: center;
     /* display: none; */
   }
-  .banner_3x_container{
+  .banner_3x_container {
     flex-direction: column;
   }
-  
-  
 
   .banner_3x_item {
     width: 95%;
     margin-bottom: 10px;
   }
-  .banner_3x_item:first-of-type{
+  .banner_3x_item:first-of-type {
     margin-top: 10px;
   }
   .container_logos {
@@ -350,6 +350,10 @@ nav {
   }
 }
 @media all and (max-width: 540px) {
+  .banner_3x_container{
+    padding: 0px 10px;
+    
+  }
   .banner_3x_item {
     width: 100%;
     height: 160px;
@@ -371,6 +375,11 @@ nav {
   }
 }
 @media all and (max-width: 370px) {
+  /* --------------- */
+  .padding_fixed {
+    padding-top: 46px;
+  }
+  /* ----------------- */
   .banner_3x_item {
     height: 130px;
   }

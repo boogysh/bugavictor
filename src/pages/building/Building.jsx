@@ -3,6 +3,7 @@ import Loader from "../../components/loader/Loader";
 import { UseFetch } from "../../hooks/useFetch";
 import Error500 from "../../components/errors/Error500";
 import "./building.css";
+import "../../components/header/header.css"
 import CardProject from "../../components/cardProject/CardProject";
 import Banner from "../../components/banner/Banner";
 import banner_bat from "../../assets/pr-bat/7.png";
@@ -17,7 +18,7 @@ export default function Building() {
   return isLoading ? (
     <Loader />
   ) : (
-    <main className="main_building">
+    <main className="main_building main-scroll">
       {/* <Banner3x /> */}
       <Banner title="Bâtiment" src={banner_bat} />
       <section id="cards" className="cards_bat">

@@ -106,28 +106,40 @@ function Header() {
     scrollFunction();
   };
   function scrollFunction() {
-    var element = document.querySelector(".header_content");
+    const element = document.querySelector(".header_content");
+    const mainHome = document.querySelector(".main-scroll");
+    // const main_architecture = document.querySelector(".main_architecture");
     const scroll =
-      document.body.scrollTop > 210 || document.documentElement.scrollTop > 210;
+      document.body.scrollTop > 215 || document.documentElement.scrollTop > 215;
     const scrollMobileLarge =
-      document.body.scrollTop > 595 || document.documentElement.scrollTop > 595;
+      document.body.scrollTop > 625 || document.documentElement.scrollTop > 625;
     const scrollMobileMedium =
-      document.body.scrollTop > 530 || document.documentElement.scrollTop > 530;
+      document.body.scrollTop > 520 || document.documentElement.scrollTop > 520;
     const scrollMobileSmall =
-      document.body.scrollTop > 435 || document.documentElement.scrollTop > 435;
+      document.body.scrollTop > 430 || document.documentElement.scrollTop > 430;
     if (matches && scroll) {
       element.classList.add("fixed");
-      // } else if (!matches && scrollMobile) {
+      mainHome.classList.add("padding_fixed");
+      // main_architecture.classList.add("padding_fixed");
     } else if (matchesMobileLarge && scrollMobileLarge) {
       element.classList.add("fixed");
+      mainHome.classList.add("padding_fixed");
+      // main_architecture.classList.add("padding_fixed");
     } else if (matchesMobileMedium && scrollMobileMedium) {
       element.classList.add("fixed");
+      mainHome.classList.add("padding_fixed");
+      // main_architecture.classList.add("padding_fixed");
     } else if (matchesMobileSmall && scrollMobileSmall) {
       element.classList.add("fixed");
+      mainHome.classList.add("padding_fixed");
+      // main_architecture.classList.add("padding_fixed");
     } else {
       element.classList.remove("fixed");
+      mainHome.classList.remove("padding_fixed");
+      // main_architecture.classList.remove("padding_fixed");
     }
   }
+ 
   //------------------------------------
 
   return (

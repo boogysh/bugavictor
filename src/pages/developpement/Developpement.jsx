@@ -1,5 +1,6 @@
 import React from "react";
 import "./developpement.css";
+import "../../components/header/header.css"
 import Banner from "../../components/banner/Banner";
 import banner_dev from "../../assets/pr-dev/banner1_dev.png";
 import Loader from "../../components/loader/Loader";
@@ -15,7 +16,7 @@ export default function Developpement() {
   return isLoading ? (
     <Loader />
   ) : (
-    <main className="main_dev">
+    <main className="main_dev main-scroll">
       {/* <Banner3x /> */}
       <Banner title="Développement" src={banner_dev} />
       <section id="cards" className="cards_bat">
