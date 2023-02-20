@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-//import { HashLink } from 'react-router-hash-link';
 
 // import Banner3x from "../banner3x/Banner3x"
 import "./header.css";
@@ -103,9 +102,6 @@ function Header() {
       .addEventListener("change", (e) => setmatchesMobileSmall(e.matches));
   }, []);
 
-  // window.onscroll = function () {
-  //   scrollFunction();
-  // };
   const scrollFunction = () => {
     const element = document.querySelector(".header_content");
     const mainScroll = document.querySelector(".main-scroll");
@@ -130,13 +126,11 @@ function Header() {
       element && element.classList.add("fixed");
       mainScroll && mainScroll.classList.add("padding_fixed");
     } else {
-      element.classList.remove("fixed");
-      mainScroll.classList.remove("padding_fixed");
+      element && element.classList.remove("fixed");
+      mainScroll && mainScroll.classList.remove("padding_fixed");
     }
   };
   window.onscroll = scrollFunction;
-  // window.onload = scrollFunction;
-
   // window.onscroll  = function () {
   //   scrollFunction();
   // };
@@ -157,11 +151,6 @@ function Header() {
             onClick={addBgAndTitleArch}
             to="/architecture"
           ></Link>
-          {/* <HashLink
-            className="linkAbsolute"
-            onClick={addBgAndTitleArch}
-            to="/architecture/#cards"
-          ></HashLink> */}
           <div
             id="bg_arch_hover"
             className={

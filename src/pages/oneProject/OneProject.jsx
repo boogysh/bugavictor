@@ -18,8 +18,7 @@ export default function OneProject() {
     href_bat && setHref(`https://boogysh.github.io/cv-api/data_bat.json`);
   }, [include_ID]);
 
-  const urlPr = window.location.href;
-  console.log("url from oneProject:", urlPr);
+  
 
   const { data, isLoading, error } = UseFetch(href);
   const { pictures, title, info } = data;
