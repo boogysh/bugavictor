@@ -28,9 +28,9 @@ function CardProject({ images, title, info, id }) {
           <div className="card_content">
             <h2 className="card_title">{title}</h2>
             <ul>
-              {info.map((item,i) => (
+              {info.map((item, i) => (
                 <li key={i}>
-                  <span  className="span_li">✅</span>
+                  <span className="span_li">✅</span>
                   {item}
                 </li>
               ))}

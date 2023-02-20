@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+//import { HashLink } from 'react-router-hash-link';
 
 // import Banner3x from "../banner3x/Banner3x"
 import "./header.css";
@@ -102,13 +103,12 @@ function Header() {
       .addEventListener("change", (e) => setmatchesMobileSmall(e.matches));
   }, []);
 
-  window.onscroll = function () {
-    scrollFunction();
-  };
-  function scrollFunction() {
+  // window.onscroll = function () {
+  //   scrollFunction();
+  // };
+  const scrollFunction = () => {
     const element = document.querySelector(".header_content");
-    const mainHome = document.querySelector(".main-scroll");
-    // const main_architecture = document.querySelector(".main_architecture");
+    const mainScroll = document.querySelector(".main-scroll");
     const scroll =
       document.body.scrollTop > 215 || document.documentElement.scrollTop > 215;
     const scrollMobileLarge =
@@ -118,28 +118,29 @@ function Header() {
     const scrollMobileSmall =
       document.body.scrollTop > 430 || document.documentElement.scrollTop > 430;
     if (matches && scroll) {
-      element.classList.add("fixed");
-      mainHome.classList.add("padding_fixed");
-      // main_architecture.classList.add("padding_fixed");
+      element && element.classList.add("fixed");
+      mainScroll && mainScroll.classList.add("padding_fixed");
     } else if (matchesMobileLarge && scrollMobileLarge) {
-      element.classList.add("fixed");
-      mainHome.classList.add("padding_fixed");
-      // main_architecture.classList.add("padding_fixed");
+      element && element.classList.add("fixed");
+      mainScroll && mainScroll.classList.add("padding_fixed");
     } else if (matchesMobileMedium && scrollMobileMedium) {
-      element.classList.add("fixed");
-      mainHome.classList.add("padding_fixed");
-      // main_architecture.classList.add("padding_fixed");
+      element && element.classList.add("fixed");
+      mainScroll && mainScroll.classList.add("padding_fixed");
     } else if (matchesMobileSmall && scrollMobileSmall) {
-      element.classList.add("fixed");
-      mainHome.classList.add("padding_fixed");
-      // main_architecture.classList.add("padding_fixed");
+      element && element.classList.add("fixed");
+      mainScroll && mainScroll.classList.add("padding_fixed");
     } else {
       element.classList.remove("fixed");
-      mainHome.classList.remove("padding_fixed");
-      // main_architecture.classList.remove("padding_fixed");
+      mainScroll.classList.remove("padding_fixed");
     }
-  }
- 
+  };
+  window.onscroll = scrollFunction;
+  // window.onload = scrollFunction;
+
+  // window.onscroll  = function () {
+  //   scrollFunction();
+  // };
+
   //------------------------------------
 
   return (
@@ -156,6 +157,11 @@ function Header() {
             onClick={addBgAndTitleArch}
             to="/architecture"
           ></Link>
+          {/* <HashLink
+            className="linkAbsolute"
+            onClick={addBgAndTitleArch}
+            to="/architecture/#cards"
+          ></HashLink> */}
           <div
             id="bg_arch_hover"
             className={

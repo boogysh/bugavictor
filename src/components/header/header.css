@@ -350,9 +350,8 @@ nav {
   }
 }
 @media all and (max-width: 540px) {
-  .banner_3x_container{
+  .banner_3x_container {
     padding: 0px 10px;
-    
   }
   .banner_3x_item {
     width: 100%;
