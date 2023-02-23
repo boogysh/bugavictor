@@ -59,6 +59,9 @@ body {
   --box_shadow_dd: rgb(141, 141, 141);
   --box_shadow_slider: rgb(83, 83, 83);
   --p_content: black;
+
+  --send_comment:#83f492;
+  --send_comment_hover:#37fa51;
 }
 /* h1{
   font-family: "Dancing Script" ;

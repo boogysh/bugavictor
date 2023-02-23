@@ -1,12 +1,12 @@
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-export function UseFetch(url, stateComment) {
+export function UseFetchOneProject(url) {
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  // const { id } = useParams();
+  const { id } = useParams();
 
   useEffect(() => {
     if (!url) return;
@@ -16,8 +16,7 @@ export function UseFetch(url, stateComment) {
         const response = await fetch(url);
         const data = await response.json();
 
-        setData(data) 
-        // || data.find((product) => product.id === id && setData(product));
+        data.find((product) => product.id === id && setData(product));
       } catch (err) {
         console.log(err);
         setError(true);
@@ -26,7 +25,6 @@ export function UseFetch(url, stateComment) {
       }
     }
     fetchData();
-    // }, [url, id]);
-  }, [url, stateComment]);
+  }, [url, id]);
   return { isLoading, data, error };
 }

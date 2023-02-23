@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 900px;
   height: 100%;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 0px;
   position: relative;
   background-color: var(--bg_body_dark);
   border: 10px solid var(--bg_body_dark);
@@ -51,7 +51,7 @@
   .slider_content {
     height: 255px;
     
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 0px;
   }
   .slider_img {
     border-radius: 5px 0 0 5px;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ListPictures from "../../components/listPictures/ListPictures";
-import { UseFetch } from "../../hooks/useFetch";
+import { UseFetchOneProject } from "../../hooks/useFetchOneProject";
 import Loader from "../../components/loader/Loader";
 import Error500 from "../../components/errors/Error500";
 import Dropdown from "../../components/dropdown/Dropdown";
@@ -20,7 +20,9 @@ export default function OneProject() {
 
   
 
-  const { data, isLoading, error } = UseFetch(href);
+  
+
+  const { data, isLoading, error } = UseFetchOneProject(href);
   const { pictures, title, info } = data;
 
   if (error) return <Error500 />;

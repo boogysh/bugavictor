@@ -19,9 +19,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/architecture" element={<Architecture />} />
+        <Route path="/architecture/:id" element={<OneProject />} />
         <Route path="/batiment" element={<Building />} />
         <Route path="/batiment/:id" element={<OneProject />} />
-        <Route path="/architecture/:id" element={<OneProject />} />
         <Route path="/developpement" element={<Developpement />}  />
         <Route path="*" element={<Error404 />} />
       </Routes>
