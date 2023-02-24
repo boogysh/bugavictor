@@ -11,17 +11,10 @@ import { v4 as uuidv4 } from "uuid";
 import Loader from "../loader/Loader";
 import axios from "axios";
 import LikeAndCommentCard from "./_cardProject/likeAndCommentCard";
-// import { MatchFirstName } from "../matchInputs/matchFirstName";
+import useFormComment from "../../hooks/useForm/useFormComment";
 
 function CardProject({ images, title, info, id }) {
   const [uri, setUri] = useState();
-
-  const [isFN, setFN] = useState("");
-  const [isFNBorderRed, setFNBorderRed] = useState(false);
-  const [isLN, setLN] = useState("");
-  const [isLNBorderRed, setLNBorderRed] = useState(false);
-  const [isComment, setComment] = useState("");
-  const [isCommentBorderRed, setCommentBorderRed] = useState(false);
 
   //  ADD showNewCommentAndLastTwo
   const [showNewCommentAndLastTwo, setshowNewCommentAndLastTwo] =
@@ -88,80 +81,33 @@ function CardProject({ images, title, info, id }) {
     href_bat && setUri("batiment");
   }, [uri]);
 
-  //--------MATCH FIRST NAME ------------------
-  // const { isFN, isFNBorderRed, setFNBorderRed} = MatchFirstName; 
+  //--------MATCH FIRST-NAME, MATCH-LAST-NAME, MATCH-COMMENT---------------
+  const {
+    borderRed,
+    resetValues,
+    matchFN,
+    matchLN,
+    matchComment,
+    isFN,
+    isFN_Red,
+    isLN,
+    isLN_Red,
+    isComment,
+    isComment_Red,
+  } = useFormComment();
+  console.log("isFN:", isFN);
 
-  const matchFirstName = (e) => {
-    const val = e.target.value;
-    const matched = val.match(/^[a-z A-Z]{3,25}$/);
-    if (val.length === 0) setFNBorderRed(false);
-    else if (val.length < 3 || val.length > 25) {
-      setFN("");
-      setFNBorderRed(true);
-    } else if (matched) {
-      setFN(val);
-      setFNBorderRed(false);
-    } else if (!matched) {
-      setFN("");
-      setFNBorderRed(true);
-    }
-  };
-  //--------MATCH LAST NAME -------------------
-  const matchLastName = (e) => {
-    const val = e.target.value;
-    const matched = val.match(/^[a-z A-Z]{3,25}$/);
-    if (val.length === 0) setLNBorderRed(false);
-    else if (val.length < 3 || val.length > 25) {
-      setLN("");
-      setLNBorderRed(true);
-    } else if (matched) {
-      setLN(val);
-      setLNBorderRed(false);
-    } else if (!matched) {
-      setLN("");
-      setLNBorderRed(true);
-    }
-  };
-  //--------MATCH COMMENT ---------------------
-  const matchComment = (e) => {
-    const val = e.target.value;
-    const matched = val.match(
-      /^[a-zA-Z0-9~!@#$%^&*()`{};':,./<>?|"+£¤áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._\s-]+$/
-    );
-    if (val.length === 0) setCommentBorderRed(false);
-    else if (val.length < 3) {
-      setComment("");
-      setCommentBorderRed(true);
-    } else if (matched) {
-      setComment(val);
-      setCommentBorderRed(false);
-    } else if (!matched) {
-      setComment("");
-      setCommentBorderRed(true);
-    }
-  };
-
-  const borderRed = () => {
-    if (!isFN) setFNBorderRed(true);
-    if (!isLN) setLNBorderRed(true);
-    if (!isComment) setCommentBorderRed(true);
-    else return;
-  };
-
+  //-------COMMENT-POST-CONTENT------------
   const commentToPost = {
     firstName: `${isFN}`,
     lastName: `${isLN}`,
     commentTxt: `${isComment}`,
     project: `${id}`,
   };
-  //------------------
+  //------------------------------------
   const commentPost = (e) => {
     e.preventDefault();
-    // Array.from(document.querySelectorAll('input'));.
-    const commentInput = document.querySelectorAll("input");
-    commentInput.forEach((input) => (input.value = ""));
-    const commentTextarea = document.querySelectorAll("textarea");
-    commentTextarea.forEach((input) => (input.value = ""));
+
     if (isComment && isFN && isLN && id) {
       // fetch(`${env.API_URL_MSG}`, {
       const fetchCommentPost = fetch("http://localhost:4000/api/comments/", {
@@ -169,14 +115,13 @@ function CardProject({ images, title, info, id }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(commentToPost),
       });
-      commentInput.value = "";
-      commentTextarea.value = "";
-      //-----------
+      //----CLEAR INPUTS AND TEXTAREA--------
       const cleanNewCommentInputs = async () => {
         await fetchCommentPost;
+        resetValues();
       };
       cleanNewCommentInputs();
-      //---------
+      //----------------------------------
       const refreshComments = async () => {
         await fetchCommentPost;
         setStatePage(statePage + 1);
@@ -199,36 +144,6 @@ function CardProject({ images, title, info, id }) {
           <div className="slider_wrapper">
             <Slider slides={images} />
           </div>
-          {/* <div className="likeAndComment_container">
-            <div className="likeAndComment_result">
-              <div className="likeAndComment_qty">
-                <img src={like} className="card_icon_small" alt="like" />{" "}
-                <span className="likesNr">5</span>
-              </div>
-              <button onClick={openAllComments} className="likeAndComment_btn">
-                Commentaires {commentsQty}
-              </button>
-            </div>
-            <div className="separe_likes"></div>
-            <div className="likeAndComment_add">
-              <button onClick={openLike} className="likeAndComment_btn">
-                <img src={like} className="card_icon" alt="like" />
-                <span className="likesNr">J'aime</span>
-              </button>
-              <button onClick={openComments} className="likeAndComment_btn">
-                <img
-                  src={comment}
-                  className="card_icon comment_icon"
-                  alt="like"
-                />
-                <span className="likesNr">Commenter</span>
-              </button>
-              <button className="likeAndComment_btn">
-                <img src={share} className="card_icon" alt="like" />
-                <span className="likesNr">Distribuer</span>
-              </button>
-            </div>
-          </div> */}
           <LikeAndCommentCard
             id={id}
             openAllComments={openAllComments}
@@ -309,9 +224,9 @@ function CardProject({ images, title, info, id }) {
             {/* -----LN-------- */}
             <input
               id="comment_LN"
-              onChange={matchLastName}
+              onChange={matchLN}
               className={
-                isLNBorderRed
+                isLN_Red
                   ? "card_comment_input card_comment_input_name border_red"
                   : "card_comment_input card_comment_input_name"
               }
@@ -321,10 +236,9 @@ function CardProject({ images, title, info, id }) {
             {/* ------FN--------*/}
             <input
               id="comment_FN"
-              // onChange={(e) => MatchFirstName(e)}
-              onChange={matchFirstName}
+              onChange={matchFN}
               className={
-                isFNBorderRed
+                isFN_Red
                   ? "card_comment_input card_comment_input_name border_red"
                   : "card_comment_input card_comment_input_name"
               }
@@ -337,7 +251,7 @@ function CardProject({ images, title, info, id }) {
               id="comment_textarea"
               onChange={matchComment}
               className={
-                isCommentBorderRed
+                isComment_Red
                   ? "card_comment_textarea border_red"
                   : "card_comment_textarea"
               }
@@ -347,7 +261,6 @@ function CardProject({ images, title, info, id }) {
             <button
               type="submit"
               className="card_comment_send"
-              // onClick={commentPost && newData}
               onClick={commentPost}
             >
               <img className="card_icon_send" src={sendComment} alt="envoyer" />
@@ -365,14 +278,11 @@ function CardProject({ images, title, info, id }) {
               : "card_all_comments hidden"
           }
         >
-          {/* {data */}
           {filteredComments
             .map((comment) => {
-              // const compareId = comment.project === id;
               return isLoading ? (
                 <Loader key={uuidv4()} />
               ) : (
-                // compareId && (
                 <div key={uuidv4()} className="card_comment_bd">
                   <div className="card_comment_bd_title">
                     <h3 className="card_comment_bd_h3">
@@ -405,14 +315,11 @@ function CardProject({ images, title, info, id }) {
             showAllComments ? "card_all_comments" : "card_all_comments hidden"
           }
         >
-          {/* {data */}
           {filteredComments
             .map((comment) => {
-              // const compareId2 = comment.project === id;
               return isLoading ? (
                 <Loader key={uuidv4()} />
               ) : (
-                // compareId2 && (
                 <div key={uuidv4()} className="card_comment_bd">
                   <div className="card_comment_bd_title">
                     <h3 className="card_comment_bd_h3">
