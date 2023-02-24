@@ -83,32 +83,41 @@ function CardProject({ images, title, info, id }) {
 
   //--------MATCH FIRST-NAME, MATCH-LAST-NAME, MATCH-COMMENT---------------
   const {
-    borderRed,
+    borderRedFunc,
     resetValues,
     matchFN,
     matchLN,
     matchComment,
-    isFN,
-    isFN_Red,
-    isLN,
-    isLN_Red,
-    isComment,
-    isComment_Red,
+    // isFN,
+    // isFN_Red,
+    // isLN,
+    // isLN_Red,
+    // isComment,
+    // isComment_Red,
+    val,
+    borderRed
   } = useFormComment();
-  console.log("isFN:", isFN);
 
   //-------COMMENT-POST-CONTENT------------
+  //
+  // firstName: `${isFN}`,
+  // lastName: `${isLN}`,
+  // commentTxt: `${isComment}`,
+  //
   const commentToPost = {
-    firstName: `${isFN}`,
-    lastName: `${isLN}`,
-    commentTxt: `${isComment}`,
+    firstName: `${val.firstName}`,
+    lastName: `${val.lastName}`,
+    commentTxt: `${val.comment}`,
     project: `${id}`,
   };
+  console.log("val",val)
   //------------------------------------
   const commentPost = (e) => {
     e.preventDefault();
 
-    if (isComment && isFN && isLN && id) {
+    // if (isComment && isFN && isLN && id) {
+    if (val.comment && val.firstName && val.lastName && id) {
+      //
       // fetch(`${env.API_URL_MSG}`, {
       const fetchCommentPost = fetch("http://localhost:4000/api/comments/", {
         method: "POST",
@@ -130,7 +139,7 @@ function CardProject({ images, title, info, id }) {
       //----------
       // props.msgConfirm();
     } else {
-      borderRed();
+      borderRedFunc();
     }
   };
 
@@ -226,7 +235,8 @@ function CardProject({ images, title, info, id }) {
               id="comment_LN"
               onChange={matchLN}
               className={
-                isLN_Red
+                // isLN_Red
+                borderRed.lastName
                   ? "card_comment_input card_comment_input_name border_red"
                   : "card_comment_input card_comment_input_name"
               }
@@ -238,7 +248,8 @@ function CardProject({ images, title, info, id }) {
               id="comment_FN"
               onChange={matchFN}
               className={
-                isFN_Red
+                // isFN_Red
+                borderRed.firstName
                   ? "card_comment_input card_comment_input_name border_red"
                   : "card_comment_input card_comment_input_name"
               }
@@ -251,7 +262,8 @@ function CardProject({ images, title, info, id }) {
               id="comment_textarea"
               onChange={matchComment}
               className={
-                isComment_Red
+                // isComment_Red
+                borderRed.comment
                   ? "card_comment_textarea border_red"
                   : "card_comment_textarea"
               }

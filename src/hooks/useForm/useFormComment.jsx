@@ -2,66 +2,76 @@
 import { useState } from "react";
 
 const useFormComment = () => {
-  // const [isCommentValues, setCommentValues] = useState("");
-  
-  //
-  const [isFN, setFN] = useState("");
-  const [isLN, setLN] = useState("");
-  const [isComment, setComment] = useState("");
-  //
-  const [isFN_Red, setFN_Red] = useState(false);
-  const [isLN_Red, setLN_Red] = useState(false);
-  const [isComment_Red, setComment_Red] = useState(false);
-  //
-
+  const [val, setVal] = useState({
+    firstName: "",
+    lastName: "",
+    comment: "",
+  });
+  const [borderRed, setBorderRed] = useState({
+    firstName: false,
+    lastName: false,
+    comment: false,
+  });
   //-----MATCH FIRST NAME
   const matchFN = (e) => {
-    const val = e.target.value;
-    const matched = val.match(/^[a-z A-Z]{3,25}$/);
-    if (val.length === 0) setFN_Red(false);
-    else if (val.length < 3 || val.length > 25) {
-      setFN("");
-      setFN_Red(true);
+    const value = e.target.value;
+    const matched = value.match(/^[a-z A-Z]{3,25}$/);
+    if (value.length === 0) setBorderRed({ ...borderRed, firstName: false });
+    else if (value.length < 3 || value.length > 25) {
+      setVal({ ...val, firstName: "" });
+      // setFN_Red(true);
+      setBorderRed({ ...borderRed, firstName: true });
     } else if (matched) {
-      setFN(val);
-      setFN_Red(false);
+      setVal({ ...val, firstName: value });
+      // setFN_Red(false);
+      setBorderRed({ ...borderRed, firstName: false });
     } else if (!matched) {
-      setFN("");
-      setFN_Red(true);
+      setVal({ ...val, firstName: "" });
+      // setFN_Red(true);
+      setBorderRed({ ...borderRed, firstName: true });
     }
   };
   //-----MATCH LAST NAME---------
   const matchLN = (e) => {
-    const val = e.target.value;
-    const matched = val.match(/^[a-z A-Z]{3,25}$/);
-    if (val.length === 0) setLN_Red(false);
-    else if (val.length < 3 || val.length > 25) {
-      setLN("");
-      setLN_Red(true);
+    const value = e.target.value;
+    const matched = value.match(/^[a-z A-Z]{3,25}$/);
+    if (value.length === 0) setBorderRed({ ...borderRed, lastName: false });
+    else if (value.length < 3 || value.length > 25) {
+      setVal({ ...val, lastName: "" });
+      // setLN_Red(true);
+      setBorderRed({ ...borderRed, lastName: true });
     } else if (matched) {
-      setLN(val);
-      setLN_Red(false);
+      setVal({ ...val, lastName: value });
+      // setLN_Red(false);
+      setBorderRed({ ...borderRed, lastName: false });
     } else if (!matched) {
-      setLN("");
-      setLN_Red(true);
+      setVal({ ...val, lastName: "" });
+      // setLN_Red(true);
+      setBorderRed({ ...borderRed, lastName: true });
     }
   };
   //-------MATCH COMMENT------
   const matchComment = (e) => {
-    const val = e.target.value;
-    const matched = val.match(
+    const value = e.target.value;
+    const matched = value.match(
       /^[a-zA-Z0-9~!@#$%^&*()`{};':,./<>?|"+£¤áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._\s-]+$/
     );
-    if (val.length === 0) setComment_Red(false);
-    else if (val.length < 3) {
-      setComment("");
-      setComment_Red(true);
+    if (value.length === 0) setBorderRed({ ...borderRed, comment: false });
+    else if (value.length < 3) {
+      // setComment("");
+      setVal({ ...val, comment: "" });
+      // setComment_Red(true);
+      setBorderRed({ ...borderRed, comment: true });
     } else if (matched) {
-      setComment(val);
-      setComment_Red(false);
+      // setComment(val);
+      setVal({ ...val, comment: value });
+      // setComment_Red(false);
+      setBorderRed({ ...borderRed, comment: false });
     } else if (!matched) {
-      setComment("");
-      setComment_Red(true);
+      // setComment("");
+      setVal({ ...val, comment: "" });
+      // setComment_Red(true);
+      setBorderRed({ ...borderRed, comment: true });
     }
   };
 
@@ -75,13 +85,30 @@ const useFormComment = () => {
     return (commentInput.value = "") && (commentTextarea.value = "");
   };
   //------SET BORDER RED
-  const borderRed = () => {
-    if (!isFN) setFN_Red(true);
-    if (!isLN) setLN_Red(true);
+  const borderRedFunc = () => {
+    // if (!isFN) setFN_Red(true);
+    // if (!isLN) setLN_Red(true);
     // if (!isComment) setComment_Red(true);
+    if (!val.firstName) setBorderRed({ ...borderRed, firstName: true });
+    if (!val.lastName) setBorderRed({ ...borderRed, lastName: true });
+    if (!val.comment) setBorderRed({ ...borderRed, comment: true });
     else return;
   };
-  return {borderRed, resetValues, matchFN, matchLN, matchComment, isFN, isFN_Red, isLN, isLN_Red, isComment, isComment_Red};
+  return {
+    borderRedFunc,
+    resetValues,
+    matchFN,
+    matchLN,
+    matchComment,
+    // isFN,
+    // isFN_Red,
+    // isLN,
+    // isLN_Red,
+    // isComment,
+    // isComment_Red,
+    val,
+    borderRed,
+  };
 };
 
 export default useFormComment;
