@@ -19,15 +19,12 @@ const useFormComment = () => {
     if (value.length === 0) setBorderRed({ ...borderRed, firstName: false });
     else if (value.length < 3 || value.length > 25) {
       setVal({ ...val, firstName: "" });
-      // setFN_Red(true);
       setBorderRed({ ...borderRed, firstName: true });
     } else if (matched) {
       setVal({ ...val, firstName: value });
-      // setFN_Red(false);
       setBorderRed({ ...borderRed, firstName: false });
     } else if (!matched) {
       setVal({ ...val, firstName: "" });
-      // setFN_Red(true);
       setBorderRed({ ...borderRed, firstName: true });
     }
   };
@@ -38,15 +35,12 @@ const useFormComment = () => {
     if (value.length === 0) setBorderRed({ ...borderRed, lastName: false });
     else if (value.length < 3 || value.length > 25) {
       setVal({ ...val, lastName: "" });
-      // setLN_Red(true);
       setBorderRed({ ...borderRed, lastName: true });
     } else if (matched) {
       setVal({ ...val, lastName: value });
-      // setLN_Red(false);
       setBorderRed({ ...borderRed, lastName: false });
     } else if (!matched) {
       setVal({ ...val, lastName: "" });
-      // setLN_Red(true);
       setBorderRed({ ...borderRed, lastName: true });
     }
   };
@@ -58,19 +52,13 @@ const useFormComment = () => {
     );
     if (value.length === 0) setBorderRed({ ...borderRed, comment: false });
     else if (value.length < 3) {
-      // setComment("");
       setVal({ ...val, comment: "" });
-      // setComment_Red(true);
       setBorderRed({ ...borderRed, comment: true });
     } else if (matched) {
-      // setComment(val);
       setVal({ ...val, comment: value });
-      // setComment_Red(false);
       setBorderRed({ ...borderRed, comment: false });
     } else if (!matched) {
-      // setComment("");
       setVal({ ...val, comment: "" });
-      // setComment_Red(true);
       setBorderRed({ ...borderRed, comment: true });
     }
   };
@@ -86,26 +74,17 @@ const useFormComment = () => {
   };
   //------SET BORDER RED
   const borderRedFunc = () => {
-    // if (!isFN) setFN_Red(true);
-    // if (!isLN) setLN_Red(true);
-    // if (!isComment) setComment_Red(true);
     if (!val.firstName) setBorderRed({ ...borderRed, firstName: true });
     if (!val.lastName) setBorderRed({ ...borderRed, lastName: true });
     if (!val.comment) setBorderRed({ ...borderRed, comment: true });
     else return;
   };
   return {
-    borderRedFunc,
-    resetValues,
     matchFN,
     matchLN,
     matchComment,
-    // isFN,
-    // isFN_Red,
-    // isLN,
-    // isLN_Red,
-    // isComment,
-    // isComment_Red,
+    borderRedFunc,
+    resetValues,
     val,
     borderRed,
   };
