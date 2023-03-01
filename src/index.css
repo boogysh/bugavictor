@@ -35,7 +35,6 @@ body {
   --bg_body_hover: rgb(224, 209, 209);
   /* --bg_body_hover: rgb(235, 222, 222); */
 
-
   --bg_body_dark: rgb(223, 204, 204);
   --bg_body_dark: rgb(235, 222, 222);
   --banner_h1: #ff6060;
@@ -60,12 +59,44 @@ body {
   --box_shadow_slider: rgb(83, 83, 83);
   --p_content: black;
 
-  --send_comment:#83f492;
-  --send_comment_hover:#37fa51;
+  --send_comment: #83f492;
+  --send_comment_hover: #37fa51;
+
+  --card_height: 490px;
+  --cardContent_height: 490px;
 }
-/* h1{
-  font-family: "Dancing Script" ;
-} */
+@media all and (max-width: 1200px) {
+  body {
+    --card_height: 475px;
+    --cardContent_height: 475px;
+  }
+}
+@media all and (max-width: 992px) {
+  body {
+    --card_height: 400px;
+    --cardContent_height: 400px;
+  }
+}
+@media all and (max-width: 767px) {
+  body {
+    --card_height: 320px;
+    --cardContent_height: 320px;
+  }
+}
+@media all and (max-width: 580px) {
+  body {
+    --card_height: 360px;
+    /* --cardContent_height: 260px; */
+    --cardContent_height: auto;
+  }
+}
+@media all and (max-width: 370px) {
+  body {
+    --card_height: 340px;
+    
+  }
+}
+
 h2 {
   font-family: "Dancing Script";
   font-size: 40px;

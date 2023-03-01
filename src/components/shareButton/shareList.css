@@ -1,0 +1,23 @@
+.social-share{
+    display: flex;
+}
+.social-share li{
+    padding: 5px;
+}
+.social-share li:hover{
+    transform: scale(1.05);
+}
+/* @media all and (max-width:767px){
+    .social-share li{
+        padding: 10px;
+    }
+} */
+@media all and (max-width:580px){
+    .social-share{
+        padding-bottom: 0;
+    }
+    .social-share li{
+        transform: scale(0.9);
+        padding: 2px;
+    }
+}
